@@ -9151,7 +9151,7 @@ function initAdserver() {
     googletag.cmd.push(function () {
         pbjs.que.push(function () {
             pbjs.setTargetingForGPTAsync();
-            //regoogletag.pubads().refresh();
+            regoogletag.pubads().refresh();
         });
     });
 }
