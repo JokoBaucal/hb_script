@@ -36,54 +36,50 @@ apstag.fetchBids({
             slotID: '320x50_P1',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P1',
             sizes: [
-                [728, 90]
+                [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         }, {
             slotID: '320x50_P2',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P2',
             sizes: [
-                [300, 250]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         }, {
             slotID: '320x50_P3',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P3',
             sizes: [
-                [300, 250],
-                [300, 600]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         },
         {
             slotID: '320x50_P4',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P4',
             sizes: [
-                [300, 250],
-                [300, 600]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         },
         {
             slotID: '320x50_P5',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P5',
             sizes: [
-                [300, 250],
-                [300, 600]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         },
         {
             slotID: '320x50_P6',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P6',
             sizes: [
-                [300, 250],
-                [300, 600]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         },
         {
             slotID: '320x50_P7',
             slotName: '/161634325/Blic_Desktop/Blic_Mobile_IT/320x50_P7',
             sizes: [
-                [300, 250],
-                [300, 600]
+                [300, 250], [336, 280], [320, 50], [320, 100], [300, 100],[300, 50]
             ]
         }
+
     ],
     timeout: 2e3
 }, function (bids) {
@@ -9113,247 +9109,6 @@ var adUnits = [{
             bidder: 'appnexus',
             params: {
                 placementId: "19156403"
-            }
-        }]
-
-    },
-    {
-        code: '320x50_P8',
-        mediaTypes: {
-            banner: {
-                sizes: [
-                    [300, 250],
-                    [320, 100],
-                    [300, 50],
-                    [300, 100],
-                    [320, 50]
-                ]
-            }
-        },
-        bids: [{
-            bidder: 'ix',
-            params: {
-                size: [300, 250],
-                siteId: "502325"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [300, 50],
-                siteId: "502325"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [300, 100],
-                siteId: "502325"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [320, 50],
-                siteId: "502325"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [320, 100],
-                siteId: "502325"
-            }
-        }, {
-            bidder: "openx",
-            params: {
-                unit: '541060468',
-                delDomain: 'ringieraxelspr-d.openx.net'
-            }
-        }, {
-            bidder: 'rubicon',
-            params: {
-                siteId: "235670",
-                zoneId: "1691576",
-                accountId: "19712"
-            }
-        }, {
-            bidder: 'criteo',
-            params: {
-                networkId: '9517'
-            }
-        }, {
-            bidder: 'connectad',
-            params: {
-                networkId: '10047',
-                siteId: '1033014'
-            }
-        }, {
-            bidder: "adform",
-            params: {
-                mid: '817481',
-            }
-        }, {
-            bidder: 'appnexus',
-            params: {
-                placementId: "19156415"
-            }
-        }]
-
-    },
-        {
-            code: '320x50_P9',
-            mediaTypes: {
-                banner: {
-                    sizes: [
-                        [300, 250],
-                        [320, 100],
-                        [300, 50],
-                        [300, 100],
-                        [320, 50]
-                    ]
-                }
-            },
-            bids: [{
-                bidder: 'ix',
-                params: {
-                    size: [300, 250],
-                    siteId: "502327"
-                }
-            }, {
-                bidder: 'ix',
-                params: {
-                    size: [300, 50],
-                    siteId: "502327"
-                }
-            }, {
-                bidder: 'ix',
-                params: {
-                    size: [300, 100],
-                    siteId: "502327"
-                }
-            }, {
-                bidder: 'ix',
-                params: {
-                    size: [320, 50],
-                    siteId: "502327"
-                }
-            }, {
-                bidder: 'ix',
-                params: {
-                    size: [320, 100],
-                    siteId: "502327"
-                }
-            }, {
-                bidder: "openx",
-                params: {
-                    unit: '541060469',
-                    delDomain: 'ringieraxelspr-d.openx.net'
-                }
-            }, {
-                bidder: 'rubicon',
-                params: {
-                    siteId: "235670",
-                    zoneId: "1691578",
-                    accountId: "19712"
-                }
-            }, {
-                bidder: 'criteo',
-                params: {
-                    networkId: '9517'
-                }
-            }, {
-                bidder: 'connectad',
-                params: {
-                    networkId: '10047',
-                    siteId: '1033014'
-                }
-            }, {
-                bidder: "adform",
-                params: {
-                    mid: '817482',
-                }
-            }, {
-                bidder: 'appnexus',
-                params: {
-                    placementId: "19156420"
-                }
-            }]
-    
-        },
-
-    {
-        code: '320x50_P10',
-        mediaTypes: {
-            banner: {
-                sizes: [
-                    [300, 250],
-                    [320, 100],
-                    [300, 50],
-                    [300, 100],
-                    [320, 50]
-                ]
-            }
-        },
-        bids: [{
-            bidder: 'ix',
-            params: {
-                size: [300, 250],
-                siteId: "502328"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [300, 50],
-                siteId: "502328"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [300, 100],
-                siteId: "502328"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [320, 50],
-                siteId: "502328"
-            }
-        }, {
-            bidder: 'ix',
-            params: {
-                size: [320, 100],
-                siteId: "502328"
-            }
-        }, {
-            bidder: "openx",
-            params: {
-                unit: '541060470',
-                delDomain: 'ringieraxelspr-d.openx.net'
-            }
-        }, {
-            bidder: 'rubicon',
-            params: {
-                siteId: "235670",
-                zoneId: "1691580",
-                accountId: "19712"
-            }
-        }, {
-            bidder: 'criteo',
-            params: {
-                networkId: '9517'
-            }
-        }, {
-            bidder: 'connectad',
-            params: {
-                networkId: '10047',
-                siteId: '1033014'
-            }
-        }, {
-            bidder: "adform",
-            params: {
-                mid: '817507',
-            }
-        }, {
-            bidder: 'appnexus',
-            params: {
-                placementId: "19156422"
             }
         }]
 }
