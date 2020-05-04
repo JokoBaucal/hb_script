@@ -8589,7 +8589,7 @@ var adUnits = [{
         bidder: 'ix',
         params: {
             size: [
-                [728, 90]
+                [970, 250]
             ],
             siteId: "336021"
         }
