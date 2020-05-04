@@ -566,6 +566,8 @@ const customConfigObject = {
         "increment": 1.00
     }]
 };
+
+
 var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 
@@ -583,8 +585,6 @@ function initAdserver() {
     if (pbjs.initAdserverSet) return;
     pbjs.initAdserverSet = true;
 
-    if (pbjs.adServerRequestSent) return;
-    pbjs.adServerRequestSent = true;
     googletag.cmd.push(function () {
         pbjs.que.push(function () {
             pbjs.setTargetingForGPTAsync();
@@ -595,3 +595,4 @@ function initAdserver() {
 setTimeout(function () {
     sendAdServerRequest();
 }, PREBID_TIMEOUT);
+
