@@ -532,8 +532,6 @@ var adUnits = [{
 }];
 
 
-
-
 const customConfigObject = {
     "buckets": [{
         "precision": 2,
@@ -557,12 +555,6 @@ const customConfigObject = {
         "increment": 1.00
     }]
 };
-
-//var googletag = googletag || {};
-//googletag.cmd = googletag.cmd || [];
-//googletag.cmd.push(function() {
-//    googletag.pubads().disableInitialLoad();
-//});
 
 var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
@@ -594,19 +586,3 @@ setTimeout(function () {
     sendAdServerRequest();
 }, PREBID_TIMEOUT);
 
-/*
-function initAdserver() {
-    if (pbjs.initAdserverSet) return;
-    pbjs.initAdserverSet = true;
-    googletag.cmd.push(function () {
-        pbjs.que.push(function () {
-            pbjs.setTargetingForGPTAsync();
-            regoogletag.pubads().refresh();
-        });
-    });
-}
-setTimeout(function () {
-    initAdserver();
-}, FAILSAFE_TIMEOUT);
-
-*/
