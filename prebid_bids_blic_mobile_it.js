@@ -582,7 +582,9 @@ pbjs.que.push(function () {
 function initAdserver() {
     if (pbjs.initAdserverSet) return;
     pbjs.initAdserverSet = true;
-   
+
+    if (pbjs.adServerRequestSent) return;
+    pbjs.adServerRequestSent = true;
     googletag.cmd.push(function () {
         pbjs.que.push(function () {
             pbjs.setTargetingForGPTAsync();
@@ -590,6 +592,6 @@ function initAdserver() {
         });
     });
 }
-setTimeout(function() {
-    initAdserver();
-}, FAILSAFE_TIMEOUT);
+setTimeout(function () {
+    sendAdServerRequest();
+}, PREBID_TIMEOUT);
