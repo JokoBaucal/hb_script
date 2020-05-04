@@ -577,14 +577,13 @@ pbjs.que.push(function () {
         priceGranularity: customConfigObject
     });
     pbjs.requestBids({
-        bidsBackHandler: initAdserver,
+        bidsBackHandler: sendAdServerRequest,
     });
 });
 
-function initAdserver() {
-    if (pbjs.initAdserverSet) return;
-    pbjs.initAdserverSet = true;
-
+function sendAdServerRequest () {
+if (pbjs.sendAdServerRequestSent) return;
+pbjs.sendAdServerRequestSent = true;
     googletag.cmd.push(function () {
         pbjs.que.push(function () {
             pbjs.setTargetingForGPTAsync();
@@ -595,4 +594,5 @@ function initAdserver() {
 setTimeout(function () {
     sendAdServerRequest();
 }, PREBID_TIMEOUT);
+
 
