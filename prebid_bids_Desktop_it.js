@@ -577,7 +577,10 @@ pbjs.que.push(function () {
     });
 });
 
-function sendAdserverRequest() {
+function initAdserver() {
+    if (pbjs.initAdserverSet) return;
+    pbjs.initAdserverSet = true;
+    
     if (pbjs.adServerRequestSent) return;
     pbjs.adServerRequestSent = true;
     googletag.cmd.push(function () {
