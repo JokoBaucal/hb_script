@@ -531,8 +531,7 @@ var adUnits = [{
     }]
 }];
 
-var pbjs = pbjs || {};
-pbjs.que = pbjs.que || [];
+
 
 
 const customConfigObject = {
@@ -565,6 +564,8 @@ const customConfigObject = {
 //    googletag.pubads().disableInitialLoad();
 //});
 
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
 
 pbjs.que.push(function () {
     pbjs.addAdUnits(adUnits);
