@@ -587,7 +587,7 @@ function sendAdserverRequest() {
     });
 }
 setTimeout(function () {
-    sendAdServerRequst();
+    sendAdServerRequest();
 }, PREBID_TIMEOUT);
 
 /*
