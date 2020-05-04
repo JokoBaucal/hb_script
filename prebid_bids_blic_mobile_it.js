@@ -592,6 +592,6 @@ function initAdserver() {
         });
     });
 }
-setTimeout(function () {
-    sendAdServerRequest();
-}, PREBID_TIMEOUT);
+setTimeout(function() {
+    initAdserver();
+}, FAILSAFE_TIMEOUT);
