@@ -503,9 +503,6 @@ pbjs.que.push(function () {
     pbjs.requestBids({
         bidsBackHandler: sendAdServerRequest,
     });
-});
-
-pbjs.que.push(function() {
     pbjs.enableAnalytics([{
         provider: 'adxpremium',
         options: {
