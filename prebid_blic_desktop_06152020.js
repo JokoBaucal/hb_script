@@ -81,7 +81,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -139,7 +139,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -212,7 +212,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -271,7 +271,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -329,7 +329,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -374,7 +374,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
@@ -434,7 +434,7 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: "335",
+            siteId: 335,
             keyId:"blic300x250"
         }
     }, {
