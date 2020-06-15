@@ -505,7 +505,15 @@ pbjs.que.push(function () {
     });
 });
 
-
+pbjs.que.push(function() {
+    pbjs.enableAnalytics([{
+        provider: 'adxpremium',
+        options: {
+            pubId: 335,
+            sid: 's333'
+        }
+    }]);
+});
 
 function sendAdServerRequest () {
 if (pbjs.sendAdServerRequestSent) return;
@@ -521,12 +529,3 @@ setTimeout(function () {
     sendAdServerRequest();
 }, PREBID_TIMEOUT);
 
-pbjs.que.push(function() {
-    pbjs.enableAnalytics([{
-        provider: 'adxpremium',
-        options: {
-            pubId: 335,
-            sid: 's333'
-        }
-    }]);
-});
