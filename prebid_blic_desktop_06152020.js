@@ -82,7 +82,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: "adform",
@@ -140,7 +140,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'openx',
@@ -213,7 +213,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'criteo',
@@ -272,7 +272,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'criteo',
@@ -330,7 +330,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'criteo',
@@ -375,7 +375,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'openx',
@@ -435,7 +435,7 @@ var adUnits = [{
         bidder: 'luponmedia',
         params: {
             siteId: "335",
-            keyid:"blic300x250"
+            keyId:"blic300x250"
         }
     }, {
         bidder: 'rubicon',
