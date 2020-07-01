@@ -18,6 +18,11 @@ var adUnits = [{
             siteId: "336036"
         }
     }, {
+        bidder: "adform",
+        params: {
+            mid: '699449',
+        }
+    }, {
         bidder: "openx",
         params: {
             unit: '540842228',
@@ -63,6 +68,11 @@ var adUnits = [{
             params: {
                 unit: '540842231',
                 delDomain: 'ringieraxelspr-d.openx.net'
+            }
+        }, {
+            bidder: "adform",
+            params: {
+                mid: '699448',
             }
         }, {
             bidder: 'luponmedia',
@@ -125,6 +135,11 @@ var adUnits = [{
             delDomain: 'ringieraxelspr-d.openx.net'
         }
     }, {
+        bidder: "adform",
+        params: {
+            mid: '699450',
+        }
+    }, {
         bidder: 'luponmedia',
         params: {
             siteId: 335,
@@ -175,6 +190,11 @@ var adUnits = [{
         params: {
             unit: '540842237',
             delDomain: 'ringieraxelspr-d.openx.net'
+        }
+    }, {
+        bidder: "adform",
+        params: {
+            mid: '699452',
         }
     }, {
         bidder: 'rubicon',
@@ -229,6 +249,11 @@ var adUnits = [{
             delDomain: 'ringieraxelspr-d.openx.net'
         }
     }, {
+        bidder: "adform",
+        params: {
+            mid: '699454',
+        }
+    }, {
         bidder: 'luponmedia',
         params: {
             siteId: 335,
@@ -258,75 +283,73 @@ var adUnits = [{
             placementId: "15028816"
         },
     }]
-    }];
-    const customConfigObject = {
-        "buckets": [{
-            "precision": 2,
-            "min": 0,
-            "max": 4,
-            "increment": 0.01
-        }, {
-            "precision": 2,
-            "min": 4,
-            "max": 8,
-            "increment": 0.05
-        }, {
-            "precision": 2,
-            "min": 8,
-            "max": 20,
-            "increment": 0.1
-        }, {
-            "precision": 2,
-            "min": 21,
-            "max": 99,
-            "increment": 1.00
-        }]
-    };
+}];
+const customConfigObject = {
+    "buckets": [{
+        "precision": 2,
+        "min": 0,
+        "max": 4,
+        "increment": 0.01
+    }, {
+        "precision": 2,
+        "min": 4,
+        "max": 8,
+        "increment": 0.05
+    }, {
+        "precision": 2,
+        "min": 8,
+        "max": 20,
+        "increment": 0.1
+    }, {
+        "precision": 2,
+        "min": 21,
+        "max": 99,
+        "increment": 1.00
+    }]
+};
 
 
-    var pbjs = pbjs || {};
-    pbjs.que = pbjs.que || [];
-    
-    pbjs.que.push(function () {
-        pbjs.addAdUnits(adUnits);
-    
-        pbjs.setConfig({
-            priceGranularity: customConfigObject,
-            userSync: {
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+
+pbjs.que.push(function () {
+    pbjs.addAdUnits(adUnits);
+
+    pbjs.setConfig({
+        priceGranularity: customConfigObject,
+        userSync: {
             filterSettings: {
                 all: {
-                    bidders: '*',  
+                    bidders: '*',
                     filter: 'include'
                 }
             }
         }
-        });
-        
-        pbjs.requestBids({
-            bidsBackHandler: sendAdServerRequest,
-        });
-        pbjs.enableAnalytics([{
-            provider: 'adxpremium',
-            options: {
-                pubId: 335,
-                sid: 's333'
-            }
-        }]);
     });
-    
-    
-    function sendAdServerRequest () {
+
+    pbjs.requestBids({
+        bidsBackHandler: sendAdServerRequest,
+    });
+    pbjs.enableAnalytics([{
+        provider: 'adxpremium',
+        options: {
+            pubId: 335,
+            sid: 's333'
+        }
+    }]);
+});
+
+
+function sendAdServerRequest() {
     if (pbjs.sendAdServerRequestSent) return;
     pbjs.sendAdServerRequestSent = true;
-        googletag.cmd.push(function () {
-            pbjs.que.push(function () {
-                pbjs.setTargetingForGPTAsync();
-                googletag.pubads().refresh();
-            });
+    googletag.cmd.push(function () {
+        pbjs.que.push(function () {
+            pbjs.setTargetingForGPTAsync();
+            googletag.pubads().refresh();
         });
-    }
-    setTimeout(function () {
-        sendAdServerRequest();
-    }, PREBID_TIMEOUT);
-
-
+    });
+}
+setTimeout(function () {
+    sendAdServerRequest();
+}, PREBID_TIMEOUT);
