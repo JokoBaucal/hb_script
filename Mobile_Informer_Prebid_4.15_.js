@@ -9703,14 +9703,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x50"
         }
     }, {
         bidder: "openx",
@@ -9763,14 +9763,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: ""
+            siteId: 1028,
+            keyId: "informer300x250"
         }
     }, {
         bidder: 'criteo',
@@ -9816,14 +9816,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer300x250"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'rubicon',
@@ -9876,14 +9876,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer300x250"
         }
     }, {
         bidder: 'criteo',
@@ -9929,14 +9929,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer300x250"
         }
     }, {
         bidder: 'criteo',
@@ -9981,14 +9981,14 @@ var adUnits = [{
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer320x100"
         }
     }, {
         bidder: 'luponmedia',
         params: {
-            siteId: 00,
-            keyId: " "
+            siteId: 1028,
+            keyId: "informer300x250"
         }
     }, {
         bidder: 'criteo',
@@ -10067,8 +10067,8 @@ pbjs.que.push(function () {
     pbjs.enableAnalytics([{
         provider: 'adxpremium',
         options: {
-            pubId: 416,
-            sid: 's333'
+            pubId: 1028,
+            sid: 's2'
         }
     }]);
 });
