@@ -10049,15 +10049,6 @@ pbjs.que.push(function () {
                 }
             }
         },
-        "currency": {
-            // enables currency feature
-            "adServerCurrency": "EUR",
-            "granularityMultiplier": 1, 
-            // optionally override the default rate file
-            "conversionRateFile": "https://api.exchangeratesapi.io/latest",
-            // optionally provide a default rate in case the file can't be read
-            "defaultRates": { "USD": { "EUR": 0.91 }}
-         }
     });
 
     pbjs.requestBids({
