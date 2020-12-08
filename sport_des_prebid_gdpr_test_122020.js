@@ -57,7 +57,8 @@ pbjs.que.push(function () {
 
     );
 
-
+var PREBID_TIMEOUT = 8000;
+var FAILSAFE_TIMEOUT = 8000;
     var adUnits = [{
         code: '970x90',
         mediaTypes: {
