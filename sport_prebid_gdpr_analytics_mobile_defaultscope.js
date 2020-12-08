@@ -5,7 +5,7 @@ var FAILSAFE_TIMEOUT = 2000;
 pbjs.que = pbjs.que || [];
   pbjs.que.push(function()
                 {
-    pbjs.setConfig( {consentManagement:
+    pbjs.setConfig({consentManagement:
                      {cmpApi: 'iab', //needs to be iab
                        timeout: 8000, //timeout for prebid to wait for consent in ms
                        defaultGdprScope: true
