@@ -8,9 +8,24 @@ pbjs.que = pbjs.que || [];
 pbjs.que.push(function () {
     pbjs.setConfig({
             consentManagement: {
-                cmpApi: 'iab', //needs to be iab
-                timeout: 8000, //timeout for prebid to wait for consent in ms
-                defaultGdprScope: true,
+                gdpr: {
+                    cmpApi: 'iab', // activates the enforcement module
+                    defaultGdprScope: true,
+                    rules: [{ // these are the default values
+                        purpose: "storage",
+                        enforcePurpose: true,
+                        enforceVendor: true
+                    }, {
+                        purpose: "basicAds",
+                        enforcePurpose: true,
+                        enforceVendor: true
+                    }, {
+                        purpose: "measurement",
+                        enforcePurpose: true,
+                        enforceVendor: true
+                    }]
+                },
+
                 priceGranularity: customConfigObject,
                 userSync: {
                     filterSettings: {
@@ -23,11 +38,7 @@ pbjs.que.push(function () {
             }
         },
 
-
     );
-
-
-
 
 
     var adUnits = [{
@@ -444,8 +455,6 @@ pbjs.que.push(function () {
 
     pbjs.que.push(function () {
         pbjs.addAdUnits(adUnits);
-
-
 
         pbjs.requestBids({
             bidsBackHandler: sendAdServerRequest,
