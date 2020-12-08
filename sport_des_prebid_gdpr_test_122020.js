@@ -16,8 +16,8 @@ pbjs.processQueue();
 
 //prebid bids
 
-var PREBID_TIMEOUT = 8000;
-var FAILSAFE_TIMEOUT = 8000;
+//var PREBID_TIMEOUT = 8000;
+//var FAILSAFE_TIMEOUT = 8000;
 
 
 pbjs.que = pbjs.que || [];
@@ -26,6 +26,7 @@ pbjs.que.push(function () {
             consentManagement: {
                 gdpr: {
                     cmpApi: 'iab', // activates the enforcement module
+                    timeout: 8000,
                     defaultGdprScope: true,
                     rules: [{ // these are the default values
                         purpose: "storage",
