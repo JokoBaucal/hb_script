@@ -16,8 +16,8 @@ pbjs.processQueue();
 
 //prebid bids
 
-var PREBID_TIMEOUT = 2000;
-var FAILSAFE_TIMEOUT = 2000;
+var PREBID_TIMEOUT = 8000;
+var FAILSAFE_TIMEOUT = 8000;
 
 
 pbjs.que = pbjs.que || [];
