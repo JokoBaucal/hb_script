@@ -462,7 +462,5 @@ function sendAdServerRequest() {
         });
     });
 }
-pbjs.addAdUnits(units); 
-pbjs.timeout = 2000; //smanji na 300 default ako je ovo mnogo
-pbjs.requestBids({ bidsBackHandler: function(bidResponses){ }, timeout: 2000 });//smanji na 300 default ako je ovo mnogo
+
 });
