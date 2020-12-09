@@ -18,6 +18,8 @@ pbjs.processQueue();
 
 //prebid
 
+//prebid
+
 var PREBID_TIMEOUT = 2000;
 var FAILSAFE_TIMEOUT = 2000;
 
@@ -29,9 +31,9 @@ pbjs.que.push(function () {
                 gdpr: {
                     cmpApi: 'iab', // activates the enforcement module
                     defaultGdprScope: true,
-                    bidderTimeout: 8000,
+                    bidderTimeout: 3000,
                     deviceAccess: false,
-                    rules: [{ // these are the default values
+                   /* rules: [{ // these are the default values
                         purpose: "storage",
                         enforcePurpose: true,
                         enforceVendor: true
@@ -44,7 +46,7 @@ pbjs.que.push(function () {
                         enforcePurpose: true,
                         enforceVendor: true
                     }]
-                },
+                },*/
 
                 priceGranularity: customConfigObject,
                 //userSync: {
