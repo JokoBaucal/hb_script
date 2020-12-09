@@ -16,8 +16,10 @@ pbjs.processQueue();
 
 //prebid bids
 
-//var PREBID_TIMEOUT = 8000;
-//var FAILSAFE_TIMEOUT = 8000;
+//prebid
+
+var PREBID_TIMEOUT = 2000;
+var FAILSAFE_TIMEOUT = 2000;
 
 
 pbjs.que = pbjs.que || [];
@@ -26,8 +28,9 @@ pbjs.que.push(function () {
             consentManagement: {
                 gdpr: {
                     cmpApi: 'iab', // activates the enforcement module
-                    timeout: 8000,
                     defaultGdprScope: true,
+                    bidderTimeout: 8000,
+                    deviceAccess: false,
                     rules: [{ // these are the default values
                         purpose: "storage",
                         enforcePurpose: true,
@@ -44,21 +47,20 @@ pbjs.que.push(function () {
                 },
 
                 priceGranularity: customConfigObject,
-                userSync: {
-                    filterSettings: {
-                        all: {
-                            bidders: '*',
-                            filter: 'include'
-                        }
-                    }
-                }
+                //userSync: {
+                  //  filterSettings: {
+                   //     all: {
+                    //        bidders: '*',
+                      //      filter: 'include'
+                       // }
+                    //}
+                //}
             }
         },
 
     );
 
-var PREBID_TIMEOUT = 2000;
-var FAILSAFE_TIMEOUT = 2000;
+
     var adUnits = [{
         code: '970x90',
         mediaTypes: {
