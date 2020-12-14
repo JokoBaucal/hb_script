@@ -10166,7 +10166,7 @@ var FAILSAFE_TIMEOUT = 3000;
 
 
 
-var pbjs = pbjs || {};
+/*var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 pbjs.que.push(function() {
    pbjs.setConfig({
@@ -10178,7 +10178,7 @@ pbjs.que.push(function() {
        }
      }
    });
-});
+});*/
 
 var adUnits = [{
     code: 'leaderboard_top',
