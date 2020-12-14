@@ -1,5 +1,5 @@
-/* prebid.js v4.15.0
-Updated : 2020-11-05 */
+/* prebid.js v4.17.0
+Updated : 2020-11-18 */
 ! function (u) {
     var s = window.pbjsChunk;
     window.pbjsChunk = function (e, t, n) {
@@ -12,7 +12,7 @@ Updated : 2020-11-05 */
     };
     var n = {},
         d = {
-            357: 0
+            360: 0
         };
 
     function f(e) {
@@ -41,7 +41,7 @@ Updated : 2020-11-05 */
         return Object.prototype.hasOwnProperty.call(e, t)
     }, f.p = "", f.oe = function (e) {
         throw console.error(e), e
-    }, f(f.s = 896)
+    }, f(f.s = 903)
 }({
     0: function (e, t, n) {
         "use strict";
@@ -338,17 +338,17 @@ Updated : 2020-11-05 */
             return i = r(i ^ i >>> 16, 2246822507) ^ r(o ^ o >>> 13, 3266489909), (4294967296 * (2097151 & (o = r(o ^ o >>> 16, 2246822507) ^ r(i ^ i >>> 13, 3266489909))) + (i >>> 0)).toString()
         };
         var r = n(3),
-            i = n(158),
+            i = n(159),
             o = n.n(i),
             a = n(10),
             c = n.n(a),
             u = n(12),
             s = n.n(u),
-            d = n(159);
+            d = n(160);
         n.d(t, "deepAccess", function () {
             return d.a
         });
-        var f = n(160);
+        var f = n(161);
 
         function l(e, t) {
             return function (e) {
@@ -745,13 +745,13 @@ Updated : 2020-11-05 */
                 }
             }
         }, t.isValid = U;
-        var r = n(90),
+        var r = n(91),
             c = n(9),
             u = n(3),
             v = n(34),
             s = n(43),
             o = n(37),
-            a = n(28),
+            a = n(29),
             i = n(5),
             y = n.n(i),
             d = n(8),
@@ -979,15 +979,27 @@ Updated : 2020-11-05 */
         Object(b.a)("checkAdUnitSetup").before(B)
     },
     10: function (e, t, n) {
-        var r = n(96);
+        var r = n(97);
         e.exports = r
     },
     100: function (e, t, n) {
+        "use strict";
+        var r = {}.propertyIsEnumerable,
+            i = Object.getOwnPropertyDescriptor,
+            o = i && !r.call({
+                1: 2
+            }, 1);
+        t.f = o ? function (e) {
+            var t = i(this, e);
+            return !!t && t.enumerable
+        } : r
+    },
+    101: function (e, t, n) {
         function r(e, t) {
             var n = c[a(e)];
             return n == s || n != u && ("function" == typeof t ? i(t) : !!t)
         }
-        var i = n(30),
+        var i = n(31),
             o = /#|\.prototype\./,
             a = r.normalize = function (e) {
                 return String(e).replace(o, ".").toLowerCase()
@@ -997,24 +1009,24 @@ Updated : 2020-11-05 */
             s = r.POLYFILL = "P";
         e.exports = r
     },
-    101: function (e, t, n) {
-        var r = n(25),
-            i = n(102),
-            o = n(19)("species");
+    102: function (e, t, n) {
+        var r = n(26),
+            i = n(103),
+            o = n(20)("species");
         e.exports = function (e, t) {
             var n;
             return i(e) && ("function" == typeof (n = e.constructor) && (n === Array || i(n.prototype)) || r(n) && null === (n = n[o])) && (n = void 0), new(void 0 === n ? Array : n)(0 === t ? 0 : t)
         }
     },
-    102: function (e, t, n) {
+    103: function (e, t, n) {
         var r = n(48);
         e.exports = Array.isArray || function (e) {
             return "Array" == r(e)
         }
     },
-    103: function (e, t, n) {
-        var r = n(24),
-            i = n(31);
+    104: function (e, t, n) {
+        var r = n(25),
+            i = n(32);
         e.exports = function (t, n) {
             try {
                 i(r, t, n)
@@ -1024,19 +1036,19 @@ Updated : 2020-11-05 */
             return n
         }
     },
-    104: function (e, t, n) {
-        var r = n(75);
+    105: function (e, t, n) {
+        var r = n(76);
         e.exports = r && !Symbol.sham && "symbol" == typeof Symbol.iterator
     },
-    105: function (e, t, n) {
-        n(106);
+    106: function (e, t, n) {
+        n(107);
         var r = n(52);
         e.exports = r("Array", "includes")
     },
-    106: function (e, t, n) {
+    107: function (e, t, n) {
         "use strict";
         var r = n(14),
-            i = n(76).includes,
+            i = n(77).includes,
             o = n(51);
         r({
             target: "Array",
@@ -1051,7 +1063,7 @@ Updated : 2020-11-05 */
             }
         }), o("includes")
     },
-    107: function (e, t, n) {
+    108: function (e, t, n) {
         var r = n(58),
             i = Math.max,
             o = Math.min;
@@ -1060,20 +1072,10 @@ Updated : 2020-11-05 */
             return n < 0 ? i(n + t, 0) : o(n, t)
         }
     },
-    108: function (e, t, n) {
-        n(109), n(126), n(87), n(128);
+    109: function (e, t, n) {
+        n(110), n(127), n(88), n(129);
         var r = n(42);
         e.exports = r.Set
-    },
-    109: function (e, t, n) {
-        "use strict";
-        var r = n(110),
-            i = n(115);
-        e.exports = r("Set", function (t) {
-            return function (e) {
-                return t(this, arguments.length ? e : void 0)
-            }
-        }, i)
     },
     11: function (e, t, n) {
         "use strict";
@@ -1136,18 +1138,28 @@ Updated : 2020-11-05 */
     },
     110: function (e, t, n) {
         "use strict";
+        var r = n(111),
+            i = n(116);
+        e.exports = r("Set", function (t) {
+            return function (e) {
+                return t(this, arguments.length ? e : void 0)
+            }
+        }, i)
+    },
+    111: function (e, t, n) {
+        "use strict";
         var f = n(14),
-            l = n(24),
-            p = n(78),
-            g = n(30),
-            b = n(31),
+            l = n(25),
+            p = n(79),
+            g = n(31),
+            b = n(32),
             v = n(17),
-            y = n(81),
-            h = n(25),
+            y = n(82),
+            h = n(26),
             m = n(64),
             S = n(33).f,
             A = n(56).forEach,
-            E = n(29),
+            E = n(30),
             r = n(54),
             O = r.set,
             T = r.getterFor;
@@ -1184,13 +1196,13 @@ Updated : 2020-11-05 */
             }, d), c || t.setStrong(r, n, i), r
         }
     },
-    111: function (e, t, n) {
-        var r = n(30);
+    112: function (e, t, n) {
+        var r = n(31);
         e.exports = !r(function () {
             return Object.isExtensible(Object.preventExtensions({}))
         })
     },
-    112: function (e, t, n) {
+    113: function (e, t, n) {
         "use strict";
         var r = n(63),
             i = n(62);
@@ -1198,31 +1210,31 @@ Updated : 2020-11-05 */
             return "[object " + i(this) + "]"
         }
     },
-    113: function (e, t, n) {
-        var r = n(24),
-            i = n(114),
+    114: function (e, t, n) {
+        var r = n(25),
+            i = n(115),
             o = r.WeakMap;
         e.exports = "function" == typeof o && /native code/.test(i(o))
     },
-    114: function (e, t, n) {
-        var r = n(74),
+    115: function (e, t, n) {
+        var r = n(75),
             i = Function.toString;
         "function" != typeof r.inspectSource && (r.inspectSource = function (e) {
             return i.call(e)
         }), e.exports = r.inspectSource
     },
-    115: function (e, t, n) {
+    116: function (e, t, n) {
         "use strict";
         var s = n(33).f,
-            d = n(82),
-            f = n(120),
-            l = n(22),
-            p = n(81),
+            d = n(83),
+            f = n(121),
+            l = n(23),
+            p = n(82),
             g = n(17),
             a = n(66),
-            c = n(125),
-            b = n(29),
-            v = n(78).fastKey,
+            c = n(126),
+            b = n(30),
+            v = n(79).fastKey,
             r = n(54),
             y = r.set,
             h = r.getterFor;
@@ -1323,28 +1335,28 @@ Updated : 2020-11-05 */
             }
         }
     },
-    116: function (e, t, n) {
-        var r = n(29),
+    117: function (e, t, n) {
+        var r = n(30),
             a = n(33),
             c = n(15),
-            u = n(117);
+            u = n(118);
         e.exports = r ? Object.defineProperties : function (e, t) {
             c(e);
             for (var n, r = u(t), i = r.length, o = 0; o < i;) a.f(e, n = r[o++], t[n]);
             return e
         }
     },
-    117: function (e, t, n) {
-        var r = n(118),
-            i = n(83);
+    118: function (e, t, n) {
+        var r = n(119),
+            i = n(84);
         e.exports = Object.keys || function (e) {
             return r(e, i)
         }
     },
-    118: function (e, t, n) {
-        var a = n(26),
+    119: function (e, t, n) {
+        var a = n(27),
             c = n(47),
-            u = n(76).indexOf,
+            u = n(77).indexOf,
             s = n(53);
         e.exports = function (e, t) {
             var n, r = c(e),
@@ -1355,29 +1367,29 @@ Updated : 2020-11-05 */
             return o
         }
     },
-    119: function (e, t, n) {
-        var r = n(27);
-        e.exports = r("document", "documentElement")
-    },
     12: function (e, t, n) {
-        var r = n(105);
+        var r = n(106);
         e.exports = r
     },
     120: function (e, t, n) {
-        var i = n(84);
+        var r = n(28);
+        e.exports = r("document", "documentElement")
+    },
+    121: function (e, t, n) {
+        var i = n(85);
         e.exports = function (e, t, n) {
             for (var r in t) n && n.unsafe && e[r] ? e[r] = t[r] : i(e, r, t[r], n);
             return e
         }
     },
-    121: function (e, t, n) {
+    122: function (e, t, n) {
         "use strict";
 
         function i() {
             return this
         }
-        var o = n(85).IteratorPrototype,
-            a = n(82),
+        var o = n(86).IteratorPrototype,
+            a = n(83),
             c = n(46),
             u = n(64),
             s = n(38);
@@ -1388,16 +1400,16 @@ Updated : 2020-11-05 */
             }), u(e, r, !1, !0), s[r] = i, e
         }
     },
-    122: function (e, t, n) {
-        var r = n(30);
+    123: function (e, t, n) {
+        var r = n(31);
         e.exports = !r(function () {
             function e() {}
             return e.prototype.constructor = null, Object.getPrototypeOf(new e) !== e.prototype
         })
     },
-    123: function (e, t, n) {
+    124: function (e, t, n) {
         var i = n(15),
-            o = n(124);
+            o = n(125);
         e.exports = Object.setPrototypeOf || ("__proto__" in {} ? function () {
             var n, r = !1,
                 e = {};
@@ -1409,19 +1421,19 @@ Updated : 2020-11-05 */
             }
         }() : void 0)
     },
-    124: function (e, t, n) {
-        var r = n(25);
+    125: function (e, t, n) {
+        var r = n(26);
         e.exports = function (e) {
             if (!r(e) && null !== e) throw TypeError("Can't set " + String(e) + " as a prototype");
             return e
         }
     },
-    125: function (e, t, n) {
+    126: function (e, t, n) {
         "use strict";
-        var r = n(27),
+        var r = n(28),
             i = n(33),
-            o = n(19),
-            a = n(29),
+            o = n(20),
+            a = n(30),
             c = o("species");
         e.exports = function (e) {
             var t = r(e),
@@ -1434,8 +1446,8 @@ Updated : 2020-11-05 */
             })
         }
     },
-    126: function (e, t) {},
-    127: function (e, t, n) {
+    127: function (e, t) {},
+    128: function (e, t, n) {
         function r(c) {
             return function (e, t) {
                 var n, r, i = String(s(e)),
@@ -1451,56 +1463,19 @@ Updated : 2020-11-05 */
             charAt: r(!0)
         }
     },
-    128: function (e, t, n) {
-        n(129);
-        var r = n(130),
-            i = n(24),
+    129: function (e, t, n) {
+        n(130);
+        var r = n(131),
+            i = n(25),
             o = n(62),
-            a = n(31),
+            a = n(32),
             c = n(38),
-            u = n(19)("toStringTag");
+            u = n(20)("toStringTag");
         for (var s in r) {
             var d = i[s],
                 f = d && d.prototype;
             f && o(f) !== u && a(f, u, s), c[s] = c.Array
         }
-    },
-    129: function (e, t, n) {
-        "use strict";
-        var r = n(47),
-            i = n(51),
-            o = n(38),
-            a = n(54),
-            c = n(66),
-            u = "Array Iterator",
-            s = a.set,
-            d = a.getterFor(u);
-        e.exports = c(Array, "Array", function (e, t) {
-            s(this, {
-                type: u,
-                target: r(e),
-                index: 0,
-                kind: t
-            })
-        }, function () {
-            var e = d(this),
-                t = e.target,
-                n = e.kind,
-                r = e.index++;
-            return !t || r >= t.length ? {
-                value: e.target = void 0,
-                done: !0
-            } : "keys" == n ? {
-                value: r,
-                done: !1
-            } : "values" == n ? {
-                value: t[r],
-                done: !1
-            } : {
-                value: [r, t[r]],
-                done: !1
-            }
-        }, "values"), o.Arguments = o.Array, i("keys"), i("values"), i("entries")
     },
     13: function (e, t, n) {
         "use strict";
@@ -1538,7 +1513,7 @@ Updated : 2020-11-05 */
                 t.push(n), e(t)
             })
         };
-        var r = n(161),
+        var r = n(162),
             i = n.n(r);
 
         function o(e, t) {
@@ -1551,7 +1526,44 @@ Updated : 2020-11-05 */
             }),
             c = a.get
     },
-    130: function (e, t) {
+    130: function (e, t, n) {
+        "use strict";
+        var r = n(47),
+            i = n(51),
+            o = n(38),
+            a = n(54),
+            c = n(66),
+            u = "Array Iterator",
+            s = a.set,
+            d = a.getterFor(u);
+        e.exports = c(Array, "Array", function (e, t) {
+            s(this, {
+                type: u,
+                target: r(e),
+                index: 0,
+                kind: t
+            })
+        }, function () {
+            var e = d(this),
+                t = e.target,
+                n = e.kind,
+                r = e.index++;
+            return !t || r >= t.length ? {
+                value: e.target = void 0,
+                done: !0
+            } : "keys" == n ? {
+                value: r,
+                done: !1
+            } : "values" == n ? {
+                value: t[r],
+                done: !1
+            } : {
+                value: [r, t[r]],
+                done: !1
+            }
+        }, "values"), o.Arguments = o.Array, i("keys"), i("values"), i("entries")
+    },
+    131: function (e, t) {
         e.exports = {
             CSSRuleList: 0,
             CSSStyleDeclaration: 0,
@@ -1586,18 +1598,18 @@ Updated : 2020-11-05 */
             TouchList: 0
         }
     },
-    131: function (e, t, n) {
+    132: function (e, t, n) {
         n(14)({
             target: "Set",
             stat: !0
         }, {
-            from: n(132)
+            from: n(133)
         })
     },
-    132: function (e, t, n) {
+    133: function (e, t, n) {
         "use strict";
         var s = n(18),
-            d = n(22),
+            d = n(23),
             f = n(17);
         e.exports = function (e, t, n) {
             var r, i, o, a, c = arguments.length,
@@ -1607,26 +1619,26 @@ Updated : 2020-11-05 */
             })) : f(e, i.push, i), new this(i))
         }
     },
-    133: function (e, t, n) {
+    134: function (e, t, n) {
         n(14)({
             target: "Set",
             stat: !0
         }, {
-            of: n(134)
+            of: n(135)
         })
     },
-    134: function (e, t, n) {
+    135: function (e, t, n) {
         "use strict";
         e.exports = function () {
             for (var e = arguments.length, t = new Array(e); e--;) t[e] = arguments[e];
             return new this(t)
         }
     },
-    135: function (e, t, n) {
+    136: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(136);
+            o = n(137);
         r({
             target: "Set",
             proto: !0,
@@ -1638,7 +1650,7 @@ Updated : 2020-11-05 */
             }
         })
     },
-    136: function (e, t, n) {
+    137: function (e, t, n) {
         "use strict";
         var i = n(15),
             o = n(18);
@@ -1647,11 +1659,11 @@ Updated : 2020-11-05 */
             return e
         }
     },
-    137: function (e, t, n) {
+    138: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(138);
+            o = n(139);
         r({
             target: "Set",
             proto: !0,
@@ -1663,7 +1675,7 @@ Updated : 2020-11-05 */
             }
         })
     },
-    138: function (e, t, n) {
+    139: function (e, t, n) {
         "use strict";
         var a = n(15),
             c = n(18);
@@ -1671,30 +1683,6 @@ Updated : 2020-11-05 */
             for (var e, t = a(this), n = c(t.delete), r = !0, i = 0, o = arguments.length; i < o; i++) e = n.call(t, arguments[i]), r = r && e;
             return !!r
         }
-    },
-    139: function (e, t, n) {
-        "use strict";
-        var r = n(14),
-            i = n(16),
-            o = n(15),
-            a = n(22),
-            c = n(36),
-            u = n(17);
-        r({
-            target: "Set",
-            proto: !0,
-            real: !0,
-            forced: i
-        }, {
-            every: function (e, t) {
-                var n = o(this),
-                    r = c(n),
-                    i = a(e, 1 < arguments.length ? t : void 0, 3);
-                return !u(r, function (e) {
-                    if (!i(e, e, n)) return u.stop()
-                }, void 0, !1, !0).stopped
-            }
-        })
     },
     14: function (e, t, n) {
         "use strict";
@@ -1716,13 +1704,13 @@ Updated : 2020-11-05 */
             }
             return e.prototype = r.prototype, e
         }
-        var h = n(24),
-            m = n(98).f,
-            S = n(100),
+        var h = n(25),
+            m = n(99).f,
+            S = n(101),
             A = n(42),
-            E = n(22),
-            O = n(31),
-            T = n(26);
+            E = n(23),
+            O = n(32),
+            T = n(27);
         e.exports = function (e, t) {
             var n, r, i, o, a, c, u, s, d = e.target,
                 f = e.global,
@@ -1738,7 +1726,31 @@ Updated : 2020-11-05 */
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(27),
+            o = n(15),
+            a = n(23),
+            c = n(36),
+            u = n(17);
+        r({
+            target: "Set",
+            proto: !0,
+            real: !0,
+            forced: i
+        }, {
+            every: function (e, t) {
+                var n = o(this),
+                    r = c(n),
+                    i = a(e, 1 < arguments.length ? t : void 0, 3);
+                return !u(r, function (e) {
+                    if (!i(e, e, n)) return u.stop()
+                }, void 0, !1, !0).stopped
+            }
+        })
+    },
+    141: function (e, t, n) {
+        "use strict";
+        var r = n(14),
+            i = n(16),
+            o = n(28),
             a = n(15),
             c = n(18),
             u = n(39),
@@ -1759,14 +1771,14 @@ Updated : 2020-11-05 */
             }
         })
     },
-    141: function (e, t, n) {
+    142: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            c = n(27),
+            c = n(28),
             u = n(15),
             s = n(18),
-            d = n(22),
+            d = n(23),
             f = n(39),
             l = n(36),
             p = n(17);
@@ -1788,12 +1800,12 @@ Updated : 2020-11-05 */
             }
         })
     },
-    142: function (e, t, n) {
+    143: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
             o = n(15),
-            a = n(22),
+            a = n(23),
             c = n(36),
             u = n(17);
         r({
@@ -1812,11 +1824,11 @@ Updated : 2020-11-05 */
             }
         })
     },
-    143: function (e, t, n) {
+    144: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(27),
+            o = n(28),
             a = n(15),
             c = n(18),
             u = n(39),
@@ -1838,7 +1850,7 @@ Updated : 2020-11-05 */
             }
         })
     },
-    144: function (e, t, n) {
+    145: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
@@ -1860,14 +1872,14 @@ Updated : 2020-11-05 */
             }
         })
     },
-    145: function (e, t, n) {
+    146: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(27),
+            o = n(28),
             a = n(15),
             c = n(18),
-            u = n(88),
+            u = n(89),
             s = n(17);
         r({
             target: "Set",
@@ -1885,7 +1897,7 @@ Updated : 2020-11-05 */
             }
         })
     },
-    146: function (e, t, n) {
+    147: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
@@ -1907,7 +1919,7 @@ Updated : 2020-11-05 */
             }
         })
     },
-    147: function (e, t, n) {
+    148: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
@@ -1929,14 +1941,14 @@ Updated : 2020-11-05 */
             }
         })
     },
-    148: function (e, t, n) {
+    149: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            c = n(27),
+            c = n(28),
             u = n(15),
             s = n(18),
-            d = n(22),
+            d = n(23),
             f = n(39),
             l = n(36),
             p = n(17);
@@ -1958,7 +1970,14 @@ Updated : 2020-11-05 */
             }
         })
     },
-    149: function (e, t, n) {
+    15: function (e, t, n) {
+        var r = n(26);
+        e.exports = function (e) {
+            if (!r(e)) throw TypeError(String(e) + " is not an object");
+            return e
+        }
+    },
+    150: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
@@ -1984,19 +2003,12 @@ Updated : 2020-11-05 */
             }
         })
     },
-    15: function (e, t, n) {
-        var r = n(25);
-        e.exports = function (e) {
-            if (!r(e)) throw TypeError(String(e) + " is not an object");
-            return e
-        }
-    },
-    150: function (e, t, n) {
+    151: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
             o = n(15),
-            a = n(22),
+            a = n(23),
             c = n(36),
             u = n(17);
         r({
@@ -2015,11 +2027,11 @@ Updated : 2020-11-05 */
             }
         })
     },
-    151: function (e, t, n) {
+    152: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(27),
+            o = n(28),
             a = n(15),
             c = n(18),
             u = n(39),
@@ -2041,11 +2053,11 @@ Updated : 2020-11-05 */
             }
         })
     },
-    152: function (e, t, n) {
+    153: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(16),
-            o = n(27),
+            o = n(28),
             a = n(15),
             c = n(18),
             u = n(39),
@@ -2063,32 +2075,32 @@ Updated : 2020-11-05 */
             }
         })
     },
-    153: function (e, t, n) {
-        n(87), n(154);
+    154: function (e, t, n) {
+        n(88), n(155);
         var r = n(42);
         e.exports = r.Array.from
     },
-    154: function (e, t, n) {
+    155: function (e, t, n) {
         var r = n(14),
-            i = n(155);
+            i = n(156);
         r({
             target: "Array",
             stat: !0,
-            forced: !n(157)(function (e) {
+            forced: !n(158)(function (e) {
                 Array.from(e)
             })
         }, {
             from: i
         })
     },
-    155: function (e, t, n) {
+    156: function (e, t, n) {
         "use strict";
-        var v = n(22),
+        var v = n(23),
             y = n(57),
-            h = n(80),
-            m = n(79),
+            h = n(81),
+            m = n(80),
             S = n(50),
-            A = n(156),
+            A = n(157),
             E = n(61);
         e.exports = function (e, t, n) {
             var r, i, o, a, c, u, s = y(e),
@@ -2105,7 +2117,7 @@ Updated : 2020-11-05 */
             return i.length = b, i
         }
     },
-    156: function (e, t, n) {
+    157: function (e, t, n) {
         "use strict";
         var i = n(55),
             o = n(33),
@@ -2115,8 +2127,8 @@ Updated : 2020-11-05 */
             r in e ? o.f(e, r, a(0, n)) : e[r] = n
         }
     },
-    157: function (e, t, n) {
-        var i = n(19)("iterator"),
+    158: function (e, t, n) {
+        var i = n(20)("iterator"),
             o = !1;
         try {
             var r = 0,
@@ -2154,7 +2166,7 @@ Updated : 2020-11-05 */
             return n
         }
     },
-    158: function (e, t) {
+    159: function (e, t) {
         e.exports = function e(t) {
             var n = Array.isArray(t) ? [] : {};
             for (var r in t) {
@@ -2164,24 +2176,24 @@ Updated : 2020-11-05 */
             return n
         }
     },
-    159: function (e, t, n) {
+    16: function (e, t) {
+        e.exports = !0
+    },
+    160: function (e, t, n) {
         "use strict";
         t.a = function (e, t, n, r, i) {
             for (t = t.split ? t.split(".") : t, r = 0; r < t.length; r++) e = e ? e[t[r]] : i;
             return e === i ? n : e
         }
     },
-    16: function (e, t) {
-        e.exports = !0
-    },
-    160: function (e, t, n) {
+    161: function (e, t, n) {
         "use strict";
         t.a = function (e, t, n) {
             t.split && (t = t.split("."));
             for (var r, i = 0, o = t.length, a = e; i < o; ++i) r = a[t[i]], a = a[t[i]] = i === o - 1 ? n : null != r ? r : !~t[i + 1].indexOf(".") && -1 < +t[i + 1] ? [] : {}
         }
     },
-    161: function (e, t) {
+    162: function (e, t) {
         h.SYNC = 1, h.ASYNC = 2, h.QUEUE = 4;
         var g = "fun-hooks";
         var n = Object.freeze({
@@ -2378,11 +2390,11 @@ Updated : 2020-11-05 */
             this.stopped = e, this.result = t
         }
         var g = n(15),
-            b = n(79),
+            b = n(80),
             v = n(50),
-            y = n(22),
+            y = n(23),
             h = n(61),
-            m = n(80);
+            m = n(81);
         (e.exports = function (e, t, n, r, i) {
             var o, a, c, u, s, d, f, l = y(t, n, r ? 2 : 1);
             if (i) o = e;
@@ -2409,18 +2421,10 @@ Updated : 2020-11-05 */
         }
     },
     19: function (e, t, n) {
-        var r = n(24),
-            i = n(73),
-            o = n(26),
-            a = n(59),
-            c = n(75),
-            u = n(104),
-            s = i("wks"),
-            d = r.Symbol,
-            f = u ? d : d && d.withoutSetter || a;
-        e.exports = function (e) {
-            return o(s, e) || (c && o(d, e) ? s[e] = d[e] : s[e] = f("Symbol." + e)), s[e]
-        }
+        "use strict";
+        t.a = function () {
+            return window.pbjs
+        }, window.pbjs = window.pbjs || {}, window.pbjs.cmd = window.pbjs.cmd || [], window.pbjs.que = window.pbjs.que || [], window._pbjsGlobals = window._pbjsGlobals || [], window._pbjsGlobals.push("pbjs")
     },
     2: function (e, t, n) {
         "use strict";
@@ -2439,6 +2443,20 @@ Updated : 2020-11-05 */
             a = "adpod"
     },
     20: function (e, t, n) {
+        var r = n(25),
+            i = n(74),
+            o = n(27),
+            a = n(59),
+            c = n(76),
+            u = n(105),
+            s = i("wks"),
+            d = r.Symbol,
+            f = u ? d : d && d.withoutSetter || a;
+        e.exports = function (e) {
+            return o(s, e) || (c && o(d, e) ? s[e] = d[e] : s[e] = f("Symbol." + e)), s[e]
+        }
+    },
+    21: function (e, t, n) {
         "use strict";
         n.d(t, "a", function () {
             return r
@@ -2501,43 +2519,10 @@ Updated : 2020-11-05 */
             }
         })
     },
-    21: function (e, t, n) {
-        "use strict";
-        t.a = function () {
-            return window.pbjs
-        }, window.pbjs = window.pbjs || {}, window.pbjs.cmd = window.pbjs.cmd || [], window.pbjs.que = window.pbjs.que || [], window._pbjsGlobals = window._pbjsGlobals || [], window._pbjsGlobals.push("pbjs")
-    },
     219: function (e, t, n) {
         n(220);
         var r = n(52);
         e.exports = r("Array", "findIndex")
-    },
-    22: function (e, t, n) {
-        var o = n(18);
-        e.exports = function (r, i, e) {
-            if (o(r), void 0 === i) return r;
-            switch (e) {
-                case 0:
-                    return function () {
-                        return r.call(i)
-                    };
-                case 1:
-                    return function (e) {
-                        return r.call(i, e)
-                    };
-                case 2:
-                    return function (e, t) {
-                        return r.call(i, e, t)
-                    };
-                case 3:
-                    return function (e, t, n) {
-                        return r.call(i, e, t, n)
-                    }
-            }
-            return function () {
-                return r.apply(i, arguments)
-            }
-        }
     },
     220: function (e, t, n) {
         "use strict";
@@ -2570,7 +2555,7 @@ Updated : 2020-11-05 */
             b = n(37),
             i = n(5),
             v = (n.n(i), n(0)),
-            y = n(23),
+            y = n(24),
             o = n(10),
             h = n.n(o),
             m = n(11),
@@ -2725,6 +2710,33 @@ Updated : 2020-11-05 */
         })
     },
     23: function (e, t, n) {
+        var o = n(18);
+        e.exports = function (r, i, e) {
+            if (o(r), void 0 === i) return r;
+            switch (e) {
+                case 0:
+                    return function () {
+                        return r.call(i)
+                    };
+                case 1:
+                    return function (e) {
+                        return r.call(i, e)
+                    };
+                case 2:
+                    return function (e, t) {
+                        return r.call(i, e, t)
+                    };
+                case 3:
+                    return function (e, t, n) {
+                        return r.call(i, e, t, n)
+                    }
+            }
+            return function () {
+                return r.apply(i, arguments)
+            }
+        }
+    },
+    24: function (e, t, n) {
         "use strict";
         n.d(t, "a", function () {
             return u
@@ -2798,7 +2810,7 @@ Updated : 2020-11-05 */
             return d.length && d[d.length - 1].getAuctionId()
         }, c)
     },
-    24: function (n, e, t) {
+    25: function (n, e, t) {
         (function (e) {
             function t(e) {
                 return e && e.Math == Math && e
@@ -2806,28 +2818,28 @@ Updated : 2020-11-05 */
             n.exports = t("object" == typeof globalThis && globalThis) || t("object" == typeof window && window) || t("object" == typeof self && self) || t("object" == typeof e && e) || Function("return this")()
         }).call(e, t(35))
     },
-    25: function (e, t) {
+    26: function (e, t) {
         e.exports = function (e) {
             return "object" == typeof e ? null !== e : "function" == typeof e
         }
     },
-    26: function (e, t) {
+    27: function (e, t) {
         var n = {}.hasOwnProperty;
         e.exports = function (e, t) {
             return n.call(e, t)
         }
     },
-    27: function (e, t, n) {
+    28: function (e, t, n) {
         function r(e) {
             return "function" == typeof e ? e : void 0
         }
         var i = n(42),
-            o = n(24);
+            o = n(25);
         e.exports = function (e, t) {
             return arguments.length < 2 ? r(i[e]) || r(o[e]) : i[e] && i[e][t] || o[e] && o[e][t]
         }
     },
-    28: function (e, t, n) {
+    29: function (e, t, n) {
         "use strict";
         n.d(t, "b", function () {
             return c
@@ -2852,16 +2864,6 @@ Updated : 2020-11-05 */
             return !t || n && r !== c ? i.b.getConfig("cache.url") || !e.vastXml || e.vastUrl ? !(!e.vastUrl && !e.vastXml) : (Object(o.logError)('\n        This bid contains only vastXml and will not work when a prebid cache url is not specified.\n        Try enabling prebid cache with pbjs.setConfig({ cache: {url: "..."} });\n      '), !1) : r !== c || !!(e.renderer || t.renderer || n.renderer)
         }, "checkVideoBidSetup")
     },
-    29: function (e, t, n) {
-        var r = n(30);
-        e.exports = !r(function () {
-            return 7 != Object.defineProperty({}, 1, {
-                get: function () {
-                    return 7
-                }
-            })[1]
-        })
-    },
     3: function (e, t, n) {
         "use strict";
         n.d(t, "a", function () {
@@ -2874,7 +2876,7 @@ Updated : 2020-11-05 */
             a = n.n(i),
             o = n(12),
             c = n.n(o),
-            u = n(77),
+            u = n(78),
             s = n.n(u),
             d = n(0);
 
@@ -2887,7 +2889,7 @@ Updated : 2020-11-05 */
                 return e
             }).apply(this, arguments)
         }
-        var l = n(89),
+        var l = n(90),
             p = n(0),
             g = n(5),
             b = "TRUE" === p.getParameterByName(g.DEBUG_MODE).toUpperCase(),
@@ -3137,7 +3139,17 @@ Updated : 2020-11-05 */
             }
         }
     },
-    30: function (e, t) {
+    30: function (e, t, n) {
+        var r = n(31);
+        e.exports = !r(function () {
+            return 7 != Object.defineProperty({}, 1, {
+                get: function () {
+                    return 7
+                }
+            })[1]
+        })
+    },
+    31: function (e, t) {
         e.exports = function (e) {
             try {
                 return !!e()
@@ -3146,8 +3158,8 @@ Updated : 2020-11-05 */
             }
         }
     },
-    31: function (e, t, n) {
-        var r = n(29),
+    32: function (e, t, n) {
+        var r = n(30),
             i = n(33),
             o = n(46);
         e.exports = r ? function (e, t, n) {
@@ -3157,8 +3169,8 @@ Updated : 2020-11-05 */
         }
     },
     33: function (e, t, n) {
-        var r = n(29),
-            i = n(71),
+        var r = n(30),
+            i = n(72),
             o = n(15),
             a = n(55),
             c = Object.defineProperty;
@@ -3209,55 +3221,48 @@ Updated : 2020-11-05 */
         }
         e.exports = n
     },
-    355: function (e, t, n) {
-        var r = n(356);
+    353: function (e, t, n) {
+        var r = n(354);
         e.exports = r
     },
-    356: function (e, t, n) {
-        n(357);
+    354: function (e, t, n) {
+        n(355);
         var r = n(52);
         e.exports = r("String", "includes")
     },
-    357: function (e, t, n) {
+    355: function (e, t, n) {
         "use strict";
         var r = n(14),
-            i = n(358),
+            i = n(356),
             o = n(49);
         r({
             target: "String",
             proto: !0,
-            forced: !n(360)("includes")
+            forced: !n(358)("includes")
         }, {
             includes: function (e, t) {
                 return !!~String(o(this)).indexOf(i(e), 1 < arguments.length ? t : void 0)
             }
         })
     },
-    358: function (e, t, n) {
-        var r = n(359);
+    356: function (e, t, n) {
+        var r = n(357);
         e.exports = function (e) {
             if (r(e)) throw TypeError("The method doesn't accept regular expressions");
             return e
         }
     },
-    359: function (e, t, n) {
-        var r = n(25),
+    357: function (e, t, n) {
+        var r = n(26),
             i = n(48),
-            o = n(19)("match");
+            o = n(20)("match");
         e.exports = function (e) {
             var t;
             return r(e) && (void 0 !== (t = e[o]) ? !!t : "RegExp" == i(e))
         }
     },
-    36: function (e, t, n) {
-        var r = n(16),
-            i = n(88);
-        e.exports = r ? i : function (e) {
-            return Set.prototype.values.call(e)
-        }
-    },
-    360: function (e, t, n) {
-        var r = n(19)("match");
+    358: function (e, t, n) {
+        var r = n(20)("match");
         e.exports = function (t) {
             var n = /./;
             try {
@@ -3268,6 +3273,13 @@ Updated : 2020-11-05 */
                 } catch (e) {}
             }
             return !1
+        }
+    },
+    36: function (e, t, n) {
+        var r = n(16),
+            i = n(89);
+        e.exports = r ? i : function (e) {
+            return Set.prototype.values.call(e)
         }
     },
     37: function (e, t, n) {
@@ -3373,7 +3385,7 @@ Updated : 2020-11-05 */
     39: function (e, t, n) {
         var i = n(15),
             o = n(18),
-            a = n(19)("species");
+            a = n(20)("species");
         e.exports = function (e, t) {
             var n, r = i(e).constructor;
             return void 0 === r || null == (n = i(r)[a]) ? t : o(n)
@@ -3727,7 +3739,7 @@ Updated : 2020-11-05 */
         var j = n(0),
             w = n(45),
             a = n(37),
-            o = n(93),
+            o = n(94),
             _ = n(11),
             B = n(3),
             r = n(43),
@@ -3736,7 +3748,7 @@ Updated : 2020-11-05 */
             U = n.n(c),
             u = n(12),
             x = n.n(u),
-            R = n(28),
+            R = n(29),
             s = n(2);
 
         function k(e) {
@@ -4067,8 +4079,8 @@ Updated : 2020-11-05 */
         var S = n(0),
             A = n(3),
             E = n(37),
-            r = n(23),
-            i = n(91),
+            r = n(24),
+            i = n(92),
             o = n(2),
             a = n(12),
             O = n.n(a);
@@ -4488,7 +4500,7 @@ Updated : 2020-11-05 */
         }
     },
     47: function (e, t, n) {
-        var r = n(70),
+        var r = n(71),
             i = n(49);
         e.exports = function (e) {
             return r(i(e))
@@ -4505,15 +4517,6 @@ Updated : 2020-11-05 */
             if (null == e) throw TypeError("Can't call method on " + e);
             return e
         }
-    },
-    498: function (e, t, n) {
-        var r = n(499);
-        e.exports = r
-    },
-    499: function (e, t, n) {
-        n(500);
-        var r = n(42);
-        e.exports = r.Number.isInteger
     },
     5: function (e, t) {
         e.exports = {
@@ -4627,16 +4630,25 @@ Updated : 2020-11-05 */
             return 0 < e ? i(r(e), 9007199254740991) : 0
         }
     },
-    500: function (e, t, n) {
+    501: function (e, t, n) {
+        var r = n(502);
+        e.exports = r
+    },
+    502: function (e, t, n) {
+        n(503);
+        var r = n(42);
+        e.exports = r.Number.isInteger
+    },
+    503: function (e, t, n) {
         n(14)({
             target: "Number",
             stat: !0
         }, {
-            isInteger: n(501)
+            isInteger: n(504)
         })
     },
-    501: function (e, t, n) {
-        var r = n(25),
+    504: function (e, t, n) {
+        var r = n(26),
             i = Math.floor;
         e.exports = function (e) {
             return !r(e) && isFinite(e) && i(e) === e
@@ -4646,18 +4658,18 @@ Updated : 2020-11-05 */
         e.exports = function () {}
     },
     52: function (e, t, n) {
-        var r = n(27);
+        var r = n(28);
         e.exports = r
     },
     53: function (e, t) {
         e.exports = {}
     },
     54: function (e, t, n) {
-        var r, i, o, a, c, u, s, d, f = n(113),
-            l = n(24),
-            p = n(25),
-            g = n(31),
-            b = n(26),
+        var r, i, o, a, c, u, s, d, f = n(114),
+            l = n(25),
+            p = n(26),
+            g = n(32),
+            b = n(27),
             v = n(65),
             y = n(53),
             h = l.WeakMap;
@@ -4690,7 +4702,7 @@ Updated : 2020-11-05 */
         }
     },
     55: function (e, t, n) {
-        var i = n(25);
+        var i = n(26);
         e.exports = function (e, t) {
             if (!i(e)) return e;
             var n, r;
@@ -4725,11 +4737,11 @@ Updated : 2020-11-05 */
                 return h ? -1 : v || y ? y : l
             }
         }
-        var S = n(22),
-            A = n(70),
+        var S = n(23),
+            A = n(71),
             E = n(57),
             O = n(50),
-            T = n(101),
+            T = n(102),
             I = [].push;
         e.exports = {
             forEach: r(0),
@@ -4765,9 +4777,9 @@ Updated : 2020-11-05 */
         function a(e) {
             throw e
         }
-        var c = n(29),
-            u = n(30),
-            s = n(26),
+        var c = n(30),
+            u = n(31),
+            s = n(27),
             d = Object.defineProperty,
             f = {};
         e.exports = function (e, t) {
@@ -4791,7 +4803,7 @@ Updated : 2020-11-05 */
     61: function (e, t, n) {
         var r = n(62),
             i = n(38),
-            o = n(19)("iterator");
+            o = n(20)("iterator");
         e.exports = function (e) {
             if (null != e) return e[o] || e["@@iterator"] || i[r(e)]
         }
@@ -4799,7 +4811,7 @@ Updated : 2020-11-05 */
     62: function (e, t, n) {
         var r = n(63),
             i = n(48),
-            o = n(19)("toStringTag"),
+            o = n(20)("toStringTag"),
             a = "Arguments" == i(function () {
                 return arguments
             }());
@@ -4814,15 +4826,15 @@ Updated : 2020-11-05 */
     },
     63: function (e, t, n) {
         var r = {};
-        r[n(19)("toStringTag")] = "z", e.exports = "[object z]" === String(r)
+        r[n(20)("toStringTag")] = "z", e.exports = "[object z]" === String(r)
     },
     64: function (e, t, n) {
         var o = n(63),
             a = n(33).f,
-            c = n(31),
-            u = n(26),
-            s = n(112),
-            d = n(19)("toStringTag");
+            c = n(32),
+            u = n(27),
+            s = n(113),
+            d = n(20)("toStringTag");
         e.exports = function (e, t, n, r) {
             var i;
             e && (i = n ? e : e.prototype, u(i, d) || a(i, d, {
@@ -4832,7 +4844,7 @@ Updated : 2020-11-05 */
         }
     },
     65: function (e, t, n) {
-        var r = n(73),
+        var r = n(74),
             i = n(59),
             o = r("keys");
         e.exports = function (e) {
@@ -4846,16 +4858,16 @@ Updated : 2020-11-05 */
             return this
         }
         var h = n(14),
-            m = n(121),
-            S = n(86),
-            A = n(123),
+            m = n(122),
+            S = n(87),
+            A = n(124),
             E = n(64),
-            O = n(31),
-            T = n(84),
-            r = n(19),
+            O = n(32),
+            T = n(85),
+            r = n(20),
             I = n(16),
             C = n(38),
-            i = n(85),
+            i = n(86),
             j = i.IteratorPrototype,
             w = i.BUGGY_SAFARI_ITERATORS,
             _ = r("iterator"),
@@ -4937,7 +4949,7 @@ Updated : 2020-11-05 */
             }
         }
     },
-    68: function (e, t, n) {
+    69: function (e, t, n) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -4946,12 +4958,12 @@ Updated : 2020-11-05 */
         }), n.d(t, "checkAdUnitSetup", function () {
             return V
         }), t.executeCallbacks = J;
-        var r = n(21),
+        var r = n(19),
             i = n(0),
             o = n(227),
             a = n(43),
             d = n(3),
-            m = n(23),
+            m = n(24),
             f = n(44),
             c = n(13),
             u = n(228),
@@ -5037,7 +5049,7 @@ Updated : 2020-11-05 */
                 n = t.mediaTypes.native;
             return n.image && n.image.sizes && !Array.isArray(n.image.sizes) && (E.logError("Please use an array of sizes for native.image.sizes field.  Removing invalid mediaTypes.native.image.sizes property from request."), delete t.mediaTypes.native.image.sizes), n.image && n.image.aspect_ratios && !Array.isArray(n.image.aspect_ratios) && (E.logError("Please use an array of sizes for native.image.aspect_ratios field.  Removing invalid mediaTypes.native.image.aspect_ratios property from request."), delete t.mediaTypes.native.image.aspect_ratios), n.icon && n.icon.sizes && !Array.isArray(n.icon.sizes) && (E.logError("Please use an array of sizes for native.icon.sizes field.  Removing invalid mediaTypes.native.icon.sizes property from request."), delete t.mediaTypes.native.icon.sizes), t
         }
-        Object(u.a)(), h.bidderSettings = h.bidderSettings || {}, h.libLoaded = !0, h.version = "v4.15.0", E.logInfo("Prebid.js v4.15.0 loaded"), h.adUnits = h.adUnits || [], h.triggerUserSyncs = I;
+        Object(u.a)(), h.bidderSettings = h.bidderSettings || {}, h.libLoaded = !0, h.version = "v4.17.0", E.logInfo("Prebid.js v4.17.0 loaded"), h.adUnits = h.adUnits || [], h.triggerUserSyncs = I;
         var z = {
                 validateBannerMediaType: W,
                 validateVideoMediaType: L,
@@ -5109,6 +5121,12 @@ Updated : 2020-11-05 */
             return E.logInfo("Invoking pbjs.getAdserverTargeting", arguments), f.a.getAllTargeting(e)
         }, h.getNoBids = function () {
             return E.logInfo("Invoking pbjs.getNoBids", arguments), H("getNoBids")
+        }, h.getNoBidsForAdUnitCode = function (t) {
+            return {
+                bids: m.a.getNoBids().filter(function (e) {
+                    return e.adUnitCode === t
+                })
+            }
         }, h.getBidResponses = function () {
             return E.logInfo("Invoking pbjs.getBidResponses", arguments), H("getBidsReceived")
         }, h.getBidResponsesForAdUnitCode = function (t) {
@@ -5289,17 +5307,6 @@ Updated : 2020-11-05 */
             c.b.ready(), $(h.que), $(h.cmd)
         }, t.default = h
     },
-    69: function (e, t, n) {
-        "use strict";
-        t.a = function (t, n) {
-            o.adServers = o.adServers || {}, o.adServers[t] = o.adServers[t] || {}, Object.keys(n).forEach(function (e) {
-                o.adServers[t][e] ? Object(i.logWarn)("Attempting to add an already registered function property ".concat(e, " for AdServer ").concat(t, ".")) : o.adServers[t][e] = n[e]
-            })
-        };
-        var r = n(21),
-            i = n(0),
-            o = Object(r.a)()
-    },
     7: function (e, t, n) {
         "use strict";
         n.d(t, "c", function () {
@@ -5468,7 +5475,18 @@ Updated : 2020-11-05 */
         }, "validateStorageEnforcement")
     },
     70: function (e, t, n) {
-        var r = n(30),
+        "use strict";
+        t.a = function (t, n) {
+            o.adServers = o.adServers || {}, o.adServers[t] = o.adServers[t] || {}, Object.keys(n).forEach(function (e) {
+                o.adServers[t][e] ? Object(i.logWarn)("Attempting to add an already registered function property ".concat(e, " for AdServer ").concat(t, ".")) : o.adServers[t][e] = n[e]
+            })
+        };
+        var r = n(19),
+            i = n(0),
+            o = Object(r.a)()
+    },
+    71: function (e, t, n) {
+        var r = n(31),
             i = n(48),
             o = "".split;
         e.exports = r(function () {
@@ -5477,10 +5495,10 @@ Updated : 2020-11-05 */
             return "String" == i(e) ? o.call(e, "") : Object(e)
         } : Object
     },
-    71: function (e, t, n) {
-        var r = n(29),
-            i = n(30),
-            o = n(72);
+    72: function (e, t, n) {
+        var r = n(30),
+            i = n(31),
+            o = n(73);
         e.exports = !r && !i(function () {
             return 7 != Object.defineProperty(o("div"), "a", {
                 get: function () {
@@ -5489,40 +5507,40 @@ Updated : 2020-11-05 */
             }).a
         })
     },
-    72: function (e, t, n) {
-        var r = n(24),
-            i = n(25),
+    73: function (e, t, n) {
+        var r = n(25),
+            i = n(26),
             o = r.document,
             a = i(o) && i(o.createElement);
         e.exports = function (e) {
             return a ? o.createElement(e) : {}
         }
     },
-    73: function (e, t, n) {
+    74: function (e, t, n) {
         var r = n(16),
-            i = n(74);
+            i = n(75);
         (e.exports = function (e, t) {
             return i[e] || (i[e] = void 0 !== t ? t : {})
         })("versions", []).push({
             version: "3.6.4",
             mode: r ? "pure" : "global",
-            copyright: "© 2020 Denis Pushkarev (zloirock.ru)"
+            copyright: "Â© 2020 Denis Pushkarev (zloirock.ru)"
         })
     },
-    74: function (e, t, n) {
-        var r = n(24),
-            i = n(103),
+    75: function (e, t, n) {
+        var r = n(25),
+            i = n(104),
             o = "__core-js_shared__",
             a = r[o] || i(o, {});
         e.exports = a
     },
-    75: function (e, t, n) {
-        var r = n(30);
+    76: function (e, t, n) {
+        var r = n(31);
         e.exports = !!Object.getOwnPropertySymbols && !r(function () {
             return !String(Symbol())
         })
     },
-    76: function (e, t, n) {
+    77: function (e, t, n) {
         function r(c) {
             return function (e, t, n) {
                 var r, i = u(e),
@@ -5539,17 +5557,17 @@ Updated : 2020-11-05 */
         }
         var u = n(47),
             s = n(50),
-            d = n(107);
+            d = n(108);
         e.exports = {
             includes: r(!0),
             indexOf: r(!1)
         }
     },
-    77: function (e, t, n) {
-        var r = n(108);
-        n(131), n(133), n(135), n(137), n(139), n(140), n(141), n(142), n(143), n(144), n(145), n(146), n(147), n(148), n(149), n(150), n(151), n(152), e.exports = r
-    },
     78: function (e, t, n) {
+        var r = n(109);
+        n(132), n(134), n(136), n(138), n(140), n(141), n(142), n(143), n(144), n(145), n(146), n(147), n(148), n(149), n(150), n(151), n(152), n(153), e.exports = r
+    },
+    79: function (e, t, n) {
         function r(e) {
             c(e, d, {
                 value: {
@@ -5559,11 +5577,11 @@ Updated : 2020-11-05 */
             })
         }
         var i = n(53),
-            o = n(25),
-            a = n(26),
+            o = n(26),
+            a = n(27),
             c = n(33).f,
             u = n(59),
-            s = n(111),
+            s = n(112),
             d = u("meta"),
             f = 0,
             l = Object.isExtensible || function () {
@@ -5593,15 +5611,6 @@ Updated : 2020-11-05 */
                 }
             };
         i[d] = !0
-    },
-    79: function (e, t, n) {
-        var r = n(19),
-            i = n(38),
-            o = r("iterator"),
-            a = Array.prototype;
-        e.exports = function (e) {
-            return void 0 !== e && (i.Array === e || a[o] === e)
-        }
     },
     8: function (e, t, n) {
         function r() {
@@ -5674,6 +5683,15 @@ Updated : 2020-11-05 */
         }, i)
     },
     80: function (e, t, n) {
+        var r = n(20),
+            i = n(38),
+            o = r("iterator"),
+            a = Array.prototype;
+        e.exports = function (e) {
+            return void 0 !== e && (i.Array === e || a[o] === e)
+        }
+    },
+    81: function (e, t, n) {
         var o = n(15);
         e.exports = function (t, e, n, r) {
             try {
@@ -5684,24 +5702,24 @@ Updated : 2020-11-05 */
             }
         }
     },
-    81: function (e, t) {
+    82: function (e, t) {
         e.exports = function (e, t, n) {
             if (!(e instanceof t)) throw TypeError("Incorrect " + (n ? n + " " : "") + "invocation");
             return e
         }
     },
-    82: function (e, t, n) {
+    83: function (e, t, n) {
         function r() {}
 
         function i(e) {
             return "<script>" + e + "</" + g + ">"
         }
         var o, a = n(15),
-            c = n(116),
-            u = n(83),
+            c = n(117),
+            u = n(84),
             s = n(53),
-            d = n(119),
-            f = n(72),
+            d = n(120),
+            f = n(73),
             l = n(65),
             p = "prototype",
             g = "script",
@@ -5724,21 +5742,21 @@ Updated : 2020-11-05 */
             return null !== e ? (r[p] = a(e), n = new r, r[p] = null, n[b] = e) : n = v(), void 0 === t ? n : c(n, t)
         }
     },
-    83: function (e, t) {
+    84: function (e, t) {
         e.exports = ["constructor", "hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf"]
     },
-    84: function (e, t, n) {
-        var i = n(31);
+    85: function (e, t, n) {
+        var i = n(32);
         e.exports = function (e, t, n, r) {
             r && r.enumerable ? e[t] = n : i(e, t, n)
         }
     },
-    85: function (e, t, n) {
+    86: function (e, t, n) {
         "use strict";
-        var r, i, o, a = n(86),
-            c = n(31),
-            u = n(26),
-            s = n(19),
+        var r, i, o, a = n(87),
+            c = n(32),
+            u = n(27),
+            s = n(20),
             d = n(16),
             f = s("iterator"),
             l = !1;
@@ -5749,20 +5767,20 @@ Updated : 2020-11-05 */
             BUGGY_SAFARI_ITERATORS: l
         }
     },
-    86: function (e, t, n) {
-        var r = n(26),
+    87: function (e, t, n) {
+        var r = n(27),
             i = n(57),
             o = n(65),
-            a = n(122),
+            a = n(123),
             c = o("IE_PROTO"),
             u = Object.prototype;
         e.exports = a ? Object.getPrototypeOf : function (e) {
             return e = i(e), r(e, c) ? e[c] : "function" == typeof e.constructor && e instanceof e.constructor ? e.constructor.prototype : e instanceof Object ? u : null
         }
     },
-    87: function (e, t, n) {
+    88: function (e, t, n) {
         "use strict";
-        var i = n(127).charAt,
+        var i = n(128).charAt,
             r = n(54),
             o = n(66),
             a = "String Iterator",
@@ -5787,7 +5805,7 @@ Updated : 2020-11-05 */
             })
         })
     },
-    88: function (e, t, n) {
+    89: function (e, t, n) {
         var r = n(15),
             i = n(61);
         e.exports = function (e) {
@@ -5795,13 +5813,6 @@ Updated : 2020-11-05 */
             if ("function" != typeof t) throw TypeError(String(e) + " is not iterable");
             return r(t.call(e))
         }
-    },
-    89: function (e, t, n) {
-        var r = n(153);
-        e.exports = r
-    },
-    896: function (e, t, n) {
-        e.exports = n(68)
     },
     9: function (e, t, n) {
         "use strict";
@@ -5815,7 +5826,7 @@ Updated : 2020-11-05 */
             I = e
         };
         var S = n(0),
-            p = n(91),
+            p = n(92),
             g = n(37),
             l = n(1),
             h = n(4),
@@ -5826,7 +5837,7 @@ Updated : 2020-11-05 */
             o = n(10),
             O = n.n(o),
             b = n(67),
-            T = n(20);
+            T = n(21);
 
         function m(e, t) {
             return function (e) {
@@ -6151,6 +6162,13 @@ Updated : 2020-11-05 */
         }, t.default = y
     },
     90: function (e, t, n) {
+        var r = n(154);
+        e.exports = r
+    },
+    903: function (e, t, n) {
+        e.exports = n(69)
+    },
+    91: function (e, t, n) {
         "use strict";
         t.a = function (e) {
             var t = e;
@@ -6165,7 +6183,7 @@ Updated : 2020-11-05 */
             }
         }
     },
-    91: function (e, t, n) {
+    92: function (e, t, n) {
         "use strict";
         t.a = function (e, t) {
             if (e.labelAll) return {
@@ -6264,11 +6282,11 @@ Updated : 2020-11-05 */
             var t
         })
     },
-    92: function (e, t, n) {
+    93: function (e, t, n) {
         var r = n(219);
         e.exports = r
     },
-    93: function (e, t, n) {
+    94: function (e, t, n) {
         "use strict";
         t.b = function (e, t, n) {
             var r = {
@@ -6309,12 +6327,12 @@ Updated : 2020-11-05 */
             return o.b.getConfig("cache.vasttrack") && (i.bidder = e.bidder, i.bidid = e.requestId, a.isPlainObject(this) && this.hasOwnProperty("auctionStart") && (i.timestamp = this.auctionStart)), "string" == typeof e.customCacheKey && "" !== e.customCacheKey && (i.key = e.customCacheKey), i
         }
     },
-    96: function (e, t, n) {
-        n(97);
+    97: function (e, t, n) {
+        n(98);
         var r = n(52);
         e.exports = r("Array", "find")
     },
-    97: function (e, t, n) {
+    98: function (e, t, n) {
         "use strict";
         var r = n(14),
             i = n(56).find,
@@ -6335,14 +6353,14 @@ Updated : 2020-11-05 */
             }
         }), o(c)
     },
-    98: function (e, t, n) {
-        var r = n(29),
-            i = n(99),
+    99: function (e, t, n) {
+        var r = n(30),
+            i = n(100),
             o = n(46),
             a = n(47),
             c = n(55),
-            u = n(26),
-            s = n(71),
+            u = n(27),
+            s = n(72),
             d = Object.getOwnPropertyDescriptor;
         t.f = r ? d : function (e, t) {
             if (e = a(e), t = c(t, !0), s) try {
@@ -6350,21 +6368,9 @@ Updated : 2020-11-05 */
             } catch (e) {}
             if (u(e, t)) return o(!i.f.call(e, t), e[t])
         }
-    },
-    99: function (e, t, n) {
-        "use strict";
-        var r = {}.propertyIsEnumerable,
-            i = Object.getOwnPropertyDescriptor,
-            o = i && !r.call({
-                1: 2
-            }, 1);
-        t.f = o ? function (e) {
-            var t = i(this, e);
-            return !!t && t.enumerable
-        } : r
     }
 });
-pbjsChunk([46], {
+pbjsChunk([48], {
     253: function (e, n, t) {
         e.exports = t(254)
     },
@@ -6736,7 +6742,7 @@ pbjsChunk([46], {
             U = "bundle"
     }
 }, [253]);
-pbjsChunk([312], {
+pbjsChunk([315], {
     273: function (e, r, a) {
         e.exports = a(274)
     },
@@ -6752,12 +6758,12 @@ pbjsChunk([312], {
             A = a(3),
             v = a(1),
             y = a(2),
-            p = a(23),
+            p = a(24),
             t = a(10),
             x = a.n(t),
             n = a(12),
             C = a.n(n),
-            g = a(28),
+            g = a(29),
             i = a(7);
 
         function s(e) {
@@ -6932,13 +6938,13 @@ pbjsChunk([312], {
                             user: n,
                             sdk: {
                                 source: "pbjs",
-                                version: "4.15.0"
+                                version: "4.17.0"
                             },
                             schain: y
                         };
                     g && (b.iab_support = {
                         omidpn: "Appnexus",
-                        omidpv: "4.15.0"
+                        omidpv: "4.17.0"
                     }), 0 < v && (b.member_id = v), s && (b.device = i), d && (b.app = o), A.b.getConfig("adpod.brandCategoryExclusion") && (b.brand_category_uniqueness = !0), c.enabled && (b.debug = c, w.logInfo("AppNexus Debug Auction Settings:\n\n" + JSON.stringify(c, null, 4))), r && r.gdprConsent && (b.gdpr_consent = {
                         consent_string: r.gdprConsent.consentString,
                         consent_required: r.gdprConsent.gdprApplies
@@ -7342,11 +7348,256 @@ pbjsChunk([312], {
         Object(v.registerBidder)(k)
     }
 }, [273]);
-pbjsChunk([276], {
-    353: function (n, t, e) {
-        n.exports = e(354)
+pbjsChunk([42], {
+    22: function (e, r, t) {
+        "use strict";
+        r.a = function (e) {
+            var r = [];
+            for (var t in e) {
+                var n;
+                e.hasOwnProperty(t) && ("pubProvidedId" === t ? r = r.concat(e.pubProvidedId) : (n = function (e, r) {
+                    var t = c[r];
+                    if (t && e) {
+                        var n = {};
+                        n.source = t.source;
+                        var i = d.isFn(t.getValue) ? t.getValue(e) : e;
+                        if (d.isStr(i)) {
+                            var o, a, s = {
+                                id: i,
+                                atype: t.atype
+                            };
+                            return !d.isFn(t.getUidExt) || (o = t.getUidExt(e)) && (s.ext = o), n.uids = [s], !d.isFn(t.getEidExt) || (a = t.getEidExt(e)) && (n.ext = a), n
+                        }
+                    }
+                    return null
+                }(e[t], t)) && r.push(n))
+            }
+            return r
+        };
+        var d = t(0),
+            c = {
+                intentIqId: {
+                    source: "intentiq.com",
+                    atype: 1
+                },
+                pubcid: {
+                    source: "pubcid.org",
+                    atype: 1
+                },
+                tdid: {
+                    source: "adserver.org",
+                    atype: 1,
+                    getUidExt: function () {
+                        return {
+                            rtiPartner: "TDID"
+                        }
+                    }
+                },
+                id5id: {
+                    getValue: function (e) {
+                        return e.uid
+                    },
+                    source: "id5-sync.com",
+                    atype: 1,
+                    getEidExt: function (e) {
+                        if (e.ext) return e.ext
+                    }
+                },
+                parrableId: {
+                    source: "parrable.com",
+                    atype: 1,
+                    getValue: function (e) {
+                        return e.eid ? e.eid : e.ccpaOptout ? "" : null
+                    },
+                    getUidExt: function (e) {
+                        var r = d.pick(e, ["ibaOptout", "ccpaOptout"]);
+                        if (Object.keys(r).length) return r
+                    }
+                },
+                idl_env: {
+                    source: "liveramp.com",
+                    atype: 1
+                },
+                lipb: {
+                    getValue: function (e) {
+                        return e.lipbid
+                    },
+                    source: "liveintent.com",
+                    atype: 1,
+                    getEidExt: function (e) {
+                        if (Array.isArray(e.segments) && e.segments.length) return {
+                            segments: e.segments
+                        }
+                    }
+                },
+                britepoolid: {
+                    source: "britepool.com",
+                    atype: 1
+                },
+                lotamePanoramaId: {
+                    source: "crwdcntrl.net",
+                    atype: 1
+                },
+                criteoId: {
+                    source: "criteo.com",
+                    atype: 1
+                },
+                merkleId: {
+                    source: "merkleinc.com",
+                    atype: 1
+                },
+                netId: {
+                    source: "netid.de",
+                    atype: 1
+                },
+                sharedid: {
+                    source: "sharedid.org",
+                    atype: 1,
+                    getValue: function (e) {
+                        return e.id
+                    },
+                    getUidExt: function (e) {
+                        return e && e.third ? {
+                            third: e.third
+                        } : void 0
+                    }
+                },
+                IDP: {
+                    source: "zeotap.com",
+                    atype: 1
+                },
+                haloId: {
+                    source: "audigent.com",
+                    atype: 1
+                },
+                quantcastId: {
+                    source: "quantcast.com",
+                    atype: 1
+                },
+                idx: {
+                    source: "idx.lat",
+                    atype: 1
+                },
+                vmuid: {
+                    source: "verizonmedia.com",
+                    atype: 1
+                }
+            }
     },
-    354: function (n, t, e) {
+    349: function (e, r, t) {
+        e.exports = t(350)
+    },
+    350: function (e, r, t) {
+        "use strict";
+        Object.defineProperty(r, "__esModule", {
+            value: !0
+        }), t.d(r, "spec", function () {
+            return c
+        });
+        var o = t(0),
+            n = t(1),
+            i = t(2),
+            a = t(3),
+            s = t(22);
+
+        function d() {
+            return (d = Object.assign || function (e) {
+                for (var r = 1; r < arguments.length; r++) {
+                    var t = arguments[r];
+                    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+                }
+                return e
+            }).apply(this, arguments)
+        }
+        var c = {
+                code: "connectad",
+                gvlid: 138,
+                aliases: ["connectadrealtime"],
+                supportedMediaTypes: [i.b],
+                isBidRequestValid: function (e) {
+                    return !(!e.params.networkId || !e.params.siteId)
+                },
+                buildRequests: function (e, r) {
+                    var t = {
+                        method: "POST",
+                        url: "",
+                        data: "",
+                        bidRequest: []
+                    };
+                    if (e.length < 1) return t;
+                    var n, i = d({
+                        placements: [],
+                        time: Date.now(),
+                        user: {},
+                        url: r.refererInfo && r.refererInfo.referer ? r.refererInfo.referer : window.location.href,
+                        referrer: window.document.referrer,
+                        referrer_info: r.refererInfo,
+                        screensize: [window.screen.width, window.screen.height].join("x"),
+                        dnt: "yes" == navigator.doNotTrack || "1" == navigator.doNotTrack || "1" == navigator.msDoNotTrack ? 1 : 0,
+                        language: navigator.language,
+                        ua: navigator.userAgent,
+                        pversion: "4.17.0"
+                    });
+                    return !0 === a.b.getConfig("coppa") && o.deepSetValue(i, "user.coppa", 1), e[0].schain && o.deepSetValue(i, "source.ext.schain", e[0].schain), r.gdprConsent && ("boolean" == typeof r.gdprConsent.gdprApplies && (n = r.gdprConsent.gdprApplies ? 1 : 0), o.deepSetValue(i, "user.ext.gdpr", n), o.deepSetValue(i, "user.ext.consent", r.gdprConsent.consentString)), r.uspConsent && o.deepSetValue(i, "user.ext.us_privacy", r.uspConsent), e[0].userId && (i.user.ext.eids = Object(s.a)(e[0].userId)), e.map(function (e) {
+                        var r, t, n = d({
+                            id: e.transactionId,
+                            divName: e.bidId,
+                            pisze: e.mediaTypes.banner.sizes[0] || e.sizes[0],
+                            sizes: e.mediaTypes.banner.sizes,
+                            adTypes: (r = e.mediaTypes.banner.sizes || e.sizes, t = [], r.forEach(function (e) {
+                                var r = u.indexOf(e[0] + "x" + e[1]);
+                                0 <= r && t.push(r)
+                            }), t),
+                            bidfloor: function (e) {
+                                var r = {};
+                                "function" == typeof e.getFloor && (r = e.getFloor({
+                                    currency: "USD",
+                                    mediaType: "banner",
+                                    size: "*"
+                                }));
+                                return r.floor || e.params.bidfloor || e.params.floorprice || 0
+                            }(e),
+                            siteId: e.params.siteId,
+                            networkId: e.params.networkId
+                        });
+                        n.networkId && n.siteId && i.placements.push(n)
+                    }), t.data = JSON.stringify(i), t.bidRequest = e, t.url = "https://i.connectad.io/api/v2", t
+                },
+                interpretResponse: function (e, r) {
+                    var t = [],
+                        n = r.bidRequest;
+                    e = (e || {}).body;
+                    for (var i, o = 0; o < n.length; o++) {
+                        var a, s, d = {},
+                            c = n[o].bidId;
+                        e && (s = (a = e.decisions && e.decisions[c]) && a.pricing && a.pricing.clearPrice, a && s && (d.requestId = c, d.cpm = s, d.width = a.width, d.height = a.height, d.dealid = a.dealid || null, d.ad = (i = a).contents && i.contents[0] && i.contents[0].body, d.currency = "USD", d.creativeId = a.adId, d.ttl = 360, d.netRevenue = !0, t.push(d)))
+                    }
+                    return t
+                },
+                transformBidParams: function (e) {
+                    return o.convertTypes({
+                        siteId: "number",
+                        networkId: "number"
+                    }, e)
+                },
+                getUserSyncs: function (e, r, t, n) {
+                    var i = "https://cdn.connectad.io/connectmyusers.php?";
+                    if (t && (i = o.tryAppendQueryString(i, "gdpr", t.gdprApplies ? 1 : 0)), t && "string" == typeof t.consentString && (i = o.tryAppendQueryString(i, "gdpr_consent", t.consentString)), n && (i = o.tryAppendQueryString(i, "us_privacy", n)), !0 === a.b.getConfig("coppa") && (i = o.tryAppendQueryString(i, "coppa", 1)), e.iframeEnabled) return [{
+                        type: "iframe",
+                        url: i
+                    }];
+                    o.logWarn("Bidder ConnectAd: Please activate iFrame Sync")
+                }
+            },
+            u = [null, "120x90", "200x200", "468x60", "728x90", "300x250", "160x600", "120x600", "300x100", "180x150", "336x280", "240x400", "234x60", "88x31", "120x60", "120x240", "125x125", "220x250", "250x250", "250x90", "0x0", "200x90", "300x50", "320x50", "320x480", "185x185", "620x45", "300x125", "800x250", "980x120", "980x150", "320x150", "300x300", "200x600", "320x500", "320x320"];
+        u[77] = "970x90", u[123] = "970x250", u[43] = "300x600", u[286] = "970x66", u[3230] = "970x280", u[429] = "486x60", u[374] = "700x500", u[934] = "300x1050", u[1578] = "320x100", u[331] = "320x250", u[3301] = "320x267", u[2730] = "728x250", Object(n.registerBidder)(c)
+    }
+}, [349]);
+pbjsChunk([280], {
+    351: function (n, t, e) {
+        n.exports = e(352)
+    },
+    352: function (n, t, e) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7368,7 +7619,7 @@ pbjsChunk([276], {
             a = e(9),
             i = e(12),
             r = e.n(i),
-            s = e(355),
+            s = e(353),
             f = e.n(s);
 
         function c(n) {
@@ -7537,12 +7788,12 @@ pbjsChunk([276], {
             return _(n.consentManagement)
         })
     }
-}, [353]);
-pbjsChunk([275], {
-    361: function (n, t, e) {
-        n.exports = e(362)
+}, [351]);
+pbjsChunk([279], {
+    359: function (n, t, e) {
+        n.exports = e(360)
     },
-    362: function (n, t, e) {
+    360: function (n, t, e) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -7656,12 +7907,12 @@ pbjsChunk([275], {
             return P(n.consentManagement)
         })
     }
-}, [361]);
-pbjsChunk([0], {
-    375: function (t, e, r) {
-        t.exports = r(376)
+}, [359]);
+pbjsChunk([1], {
+    373: function (t, e, r) {
+        t.exports = r(374)
     },
-    376: function (module, __webpack_exports__, __webpack_require__) {
+    374: function (module, __webpack_exports__, __webpack_require__) {
         "use strict";
         Object.defineProperty(__webpack_exports__, "__esModule", {
             value: !0
@@ -7679,7 +7930,7 @@ pbjsChunk([0], {
             __WEBPACK_IMPORTED_MODULE_4__src_utils_js__ = __webpack_require__(0),
             __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js__ = __webpack_require__(10),
             __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js__),
-            __WEBPACK_IMPORTED_MODULE_6_criteo_direct_rsa_validate_build_verify_js__ = __webpack_require__(377),
+            __WEBPACK_IMPORTED_MODULE_6_criteo_direct_rsa_validate_build_verify_js__ = __webpack_require__(375),
             __WEBPACK_IMPORTED_MODULE_6_criteo_direct_rsa_validate_build_verify_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_criteo_direct_rsa_validate_build_verify_js__),
             __WEBPACK_IMPORTED_MODULE_7__src_storageManager_js__ = __webpack_require__(7);
 
@@ -7718,7 +7969,7 @@ pbjsChunk([0], {
                             ceh: __WEBPACK_IMPORTED_MODULE_2__src_config_js__.b.getConfig("criteo.ceh")
                         }), publisherTagAvailable() || (window.Criteo = window.Criteo || {}, window.Criteo.usePrebidEvents = !1, tryGetCriteoFastBid(), setTimeout(function () {
                             Object(__WEBPACK_IMPORTED_MODULE_0__src_adloader_js__.a)(PUBLISHER_TAG_URL, BIDDER_CODE)
-                        }, e.timeout)), _ = publisherTagAvailable() ? (r = new Criteo.PubTag.Adapters.Prebid(PROFILE_ID_PUBLISHERTAG, ADAPTER_VERSION, t, e, "4.15.0"), i = __WEBPACK_IMPORTED_MODULE_2__src_config_js__.b.getConfig("enableSendAllBids"), r.setEnableSendAllBids && "function" == typeof r.setEnableSendAllBids && "boolean" == typeof i && r.setEnableSendAllBids(i), o = r.buildCdbUrl(), r.buildCdbRequest()) : (o = buildCdbUrl(s = buildContext(t, e)), buildCdbRequest(s, t, e))) return {
+                        }, e.timeout)), _ = publisherTagAvailable() ? (r = new Criteo.PubTag.Adapters.Prebid(PROFILE_ID_PUBLISHERTAG, ADAPTER_VERSION, t, e, "4.17.0"), i = __WEBPACK_IMPORTED_MODULE_2__src_config_js__.b.getConfig("enableSendAllBids"), r.setEnableSendAllBids && "function" == typeof r.setEnableSendAllBids && "boolean" == typeof i && r.setEnableSendAllBids(i), o = r.buildCdbUrl(), r.buildCdbRequest()) : (o = buildCdbUrl(s = buildContext(t, e)), buildCdbRequest(s, t, e))) return {
                         method: "POST",
                         url: o,
                         data: _,
@@ -7794,7 +8045,7 @@ pbjsChunk([0], {
 
         function buildCdbUrl(t) {
             var e = CDB_ENDPOINT;
-            return e += "?profileId=" + PROFILE_ID_INLINE, e += "&av=" + String(ADAPTER_VERSION), e += "&wv=" + encodeURIComponent("4.15.0"), e += "&cb=" + String(Math.floor(99999999999 * Math.random())), t.amp && (e += "&im=1"), t.debug && (e += "&debug=1"), t.noLog && (e += "&nolog=1"), e
+            return e += "?profileId=" + PROFILE_ID_INLINE, e += "&av=" + String(ADAPTER_VERSION), e += "&wv=" + encodeURIComponent("4.17.0"), e += "&cb=" + String(Math.floor(99999999999 * Math.random())), t.amp && (e += "&im=1"), t.debug && (e += "&debug=1"), t.noLog && (e += "&nolog=1"), e
         }
 
         function checkNativeSendId(t) {
@@ -7900,13 +8151,13 @@ pbjsChunk([0], {
         }
         Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__.registerBidder)(spec)
     },
-    377: function (t, e, r) {
+    375: function (t, e, r) {
         "use strict";
         Object.defineProperty(e, "__esModule", {
             value: !0
         });
-        var a = r(378),
-            n = r(379);
+        var a = r(376),
+            n = r(377);
         e.verify = function (t, e, r, i) {
             var s = new a.BigInteger(a.b64toHex(e)),
                 o = new a.BigInteger(a.b64toHex(r)),
@@ -7914,7 +8165,7 @@ pbjsChunk([0], {
             return a.removeExtraSymbols(_.toHexString()) === n.Sha256.hash(t)
         }
     },
-    378: function (t, e, r) {
+    376: function (t, e, r) {
         "use strict";
         var i;
         Object.defineProperty(e, "__esModule", {
@@ -8162,7 +8413,7 @@ pbjsChunk([0], {
         e.nbv = f, s.ZERO = f(0), s.ONE = f(1), i = "Microsoft Internet Explorer" == navigator.appName ? (s.prototype.am = s.prototype.am2, 30) : "Netscape" != navigator.appName ? (s.prototype.am = s.prototype.am1, 26) : (s.prototype.am = s.prototype.am3, 28), s.prototype.DB = i, s.prototype.DM = (1 << i) - 1, s.prototype.DV = 1 << i;
         s.prototype.FV = Math.pow(2, 52), s.prototype.F1 = 52 - i, s.prototype.F2 = 2 * i - 52
     },
-    379: function (t, e, r) {
+    377: function (t, e, r) {
         "use strict";
         Object.defineProperty(e, "__esModule", {
             value: !0
@@ -8214,12 +8465,237 @@ pbjsChunk([0], {
         function y() {}
         e.Sha256 = i
     }
-}, [375]);
-pbjsChunk([214], {
-    496: function (e, r, t) {
-        e.exports = t(497)
+}, [373]);
+pbjsChunk([245], {
+    438: function (e, r, n) {
+        e.exports = n(439)
     },
-    497: function (e, r, t) {
+    439: function (e, r, n) {
+        "use strict";
+        Object.defineProperty(r, "__esModule", {
+            value: !0
+        }), n.d(r, "purpose1Rule", function () {
+            return O
+        }), n.d(r, "purpose2Rule", function () {
+            return h
+        }), n.d(r, "purpose7Rule", function () {
+            return j
+        }), n.d(r, "enforcementRules", function () {
+            return C
+        }), n.d(r, "internal", function () {
+            return w
+        }), r.getGvlid = B, r.validateRules = V, r.deviceAccessHook = H, r.userSyncHook = R, r.userIdHook = T, r.makeBidRequestsHook = G, r.enableAnalyticsHook = M, r.setEnforcementConfig = U;
+        var l = n(0),
+            c = n(3),
+            s = n(9),
+            t = n(10),
+            o = n.n(t),
+            a = n(12),
+            p = n.n(a),
+            i = n(1),
+            u = n(13),
+            d = n(7),
+            f = n(8),
+            g = n.n(f),
+            b = n(5);
+        n.n(b);
+
+        function v(r, e) {
+            var n, t = Object.keys(r);
+            return Object.getOwnPropertySymbols && (n = Object.getOwnPropertySymbols(r), e && (n = n.filter(function (e) {
+                return Object.getOwnPropertyDescriptor(r, e).enumerable
+            })), t.push.apply(t, n)), t
+        }
+
+        function y(o) {
+            for (var e = 1; e < arguments.length; e++) {
+                var a = null != arguments[e] ? arguments[e] : {};
+                e % 2 ? v(Object(a), !0).forEach(function (e) {
+                    var r, n, t;
+                    r = o, t = a[n = e], n in r ? Object.defineProperty(r, n, {
+                        value: t,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : r[n] = t
+                }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : v(Object(a)).forEach(function (e) {
+                    Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+                })
+            }
+            return o
+        }
+
+        function m() {
+            return (m = Object.assign || function (e) {
+                for (var r = 1; r < arguments.length; r++) {
+                    var n = arguments[r];
+                    for (var t in n) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t])
+                }
+                return e
+            }).apply(this, arguments)
+        }
+
+        function A(e) {
+            return (A = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
+                return typeof e
+            } : function (e) {
+                return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+            })(e)
+        }
+        var O, h, j, C, D = {
+                purpose1: {
+                    id: 1,
+                    name: "storage"
+                },
+                purpose2: {
+                    id: 2,
+                    name: "basicAds"
+                },
+                purpose7: {
+                    id: 7,
+                    name: "measurement"
+                }
+            },
+            E = [{
+                purpose: "storage",
+                enforcePurpose: !0,
+                enforceVendor: !0,
+                vendorExceptions: []
+            }, {
+                purpose: "basicAds",
+                enforcePurpose: !0,
+                enforceVendor: !0,
+                vendorExceptions: []
+            }],
+            P = [],
+            k = [],
+            S = [],
+            F = !1,
+            w = {
+                getGvlidForBidAdapter: function (e) {
+                    var r = null; {
+                        var n;
+                        !(e = e || c.b.getCurrentBidder()) || (n = s.default.getBidAdapter(e)) && n.getSpec && (r = n.getSpec().gvlid)
+                    }
+                    return r
+                },
+                getGvlidForUserIdModule: function (e) {
+                    return "object" === A(e) ? e.gvlid : null
+                },
+                getGvlidForAnalyticsAdapter: function (e) {
+                    return s.default.getAnalyticsAdapter(e) && (s.default.getAnalyticsAdapter(e).gvlid || null)
+                }
+            };
+
+        function B(e) {
+            var r = null;
+            if (e) {
+                var n = c.b.getConfig("gvlMapping"),
+                    t = "string" == typeof e ? e : e.name;
+                if (n && n[t]) return r = n[t];
+                r = w.getGvlidForBidAdapter(t) || w.getGvlidForUserIdModule(e) || w.getGvlidForAnalyticsAdapter(t)
+            }
+            return r
+        }
+
+        function V(r, e, n, t) {
+            var o = D[Object.keys(D).filter(function (e) {
+                return D[e].name === r.purpose
+            })[0]].id;
+            if (p()(r.vendorExceptions || [], n)) return !0;
+            var a = l.deepAccess(e, "vendorData.purpose.consents.".concat(o)),
+                i = l.deepAccess(e, "vendorData.vendor.consents.".concat(t)),
+                c = l.deepAccess(e, "vendorData.purpose.legitimateInterests.".concat(o)),
+                s = !1 === r.enforcePurpose || !0 === a,
+                u = !1 === r.enforceVendor || !0 === i;
+            return 2 === o ? s && u || !0 === c : s && u
+        }
+
+        function H(e, r, n, t) {
+            var o, a, i;
+            t = m({}, {
+                hasEnforcementHook: !0
+            }), Object(l.hasDeviceAccess)() ? (o = s.gdprDataHandler.getConsentData()) && o.gdprApplies && 2 === o.apiVersion ? (r = (a = c.b.getCurrentBidder()) && a != n && s.default.aliasRegistry[a] === n ? B(a) : B(n) || r, V(O, o, i = n || a, r) ? t.valid = !0 : (i && l.logWarn("TCF2 denied device access for ".concat(i)), t.valid = !1, P.push(i))) : t.valid = !0 : (l.logWarn("Device access is disabled by Publisher"), t.valid = !1), e.call(this, r, n, t)
+        }
+
+        function R(e) {
+            for (var r, n, t = s.gdprDataHandler.getConsentData(), o = arguments.length, a = new Array(1 < o ? o - 1 : 0), i = 1; i < o; i++) a[i - 1] = arguments[i];
+            t && t.gdprApplies && 2 === t.apiVersion ? (n = B(r = c.b.getCurrentBidder()), V(O, t, r, n) ? e.call.apply(e, [this].concat(a)) : (l.logWarn("User sync not allowed for ".concat(r)), P.push(r))) : e.call.apply(e, [this].concat(a))
+        }
+
+        function T(e, r, t) {
+            var n;
+            t && t.gdprApplies && 2 === t.apiVersion ? (n = r.map(function (e) {
+                var r = B(e.submodule),
+                    n = e.submodule.name;
+                if (V(O, t, n, r)) return e;
+                l.logWarn("User denied permission to fetch user id for ".concat(n, " User id module")), P.push(n)
+            }).filter(function (e) {
+                return e
+            }), e.call(this, n, y(y({}, t), {}, {
+                hasValidated: !0
+            }))) : e.call(this, r, t)
+        }
+
+        function G(e, r) {
+            for (var o = s.gdprDataHandler.getConsentData(), n = arguments.length, t = new Array(2 < n ? n - 2 : 0), a = 2; a < n; a++) t[a - 2] = arguments[a];
+            o && o.gdprApplies && 2 === o.apiVersion && r.forEach(function (e) {
+                e.bids = e.bids.filter(function (e) {
+                    var r = e.bidder,
+                        n = B(r);
+                    if (p()(k, r)) return !1;
+                    var t = !!V(h, o, r, n);
+                    return t || (l.logWarn("TCF2 blocked auction for ".concat(r)), k.push(r)), t
+                })
+            }), e.call.apply(e, [this, r].concat(t))
+        }
+
+        function M(e, r) {
+            var o = s.gdprDataHandler.getConsentData();
+            o && o.gdprApplies && 2 === o.apiVersion && (l.isArray(r) || (r = [r]), r = r.filter(function (e) {
+                var r = e.provider,
+                    n = B(r),
+                    t = !!V(j, o, r, n);
+                return t || (S.push(r), l.logWarn("TCF2 blocked analytics adapter ".concat(e.provider))), t
+            })), e.call(this, r)
+        }
+        g.a.on(b.EVENTS.AUCTION_END, function () {
+            function e(n) {
+                return n.filter(function (e, r) {
+                    return null !== e && n.indexOf(e) === r
+                })
+            }
+            var r = {
+                storageBlocked: e(P),
+                biddersBlocked: e(k),
+                analyticsBlocked: e(S)
+            };
+            g.a.emit(b.EVENTS.TCF2_ENFORCEMENT, r)
+        });
+        var W = function (e) {
+                return e.purpose === D.purpose1.name
+            },
+            I = function (e) {
+                return e.purpose === D.purpose2.name
+            },
+            N = function (e) {
+                return e.purpose === D.purpose7.name
+            };
+
+        function U(e) {
+            var r = l.deepAccess(e, "gdpr.rules");
+            C = r || (l.logWarn("TCF2: enforcing P1 and P2 by default"), E), O = o()(C, W), h = o()(C, I), j = o()(C, N), O = O || E[0], h = h || E[1], O && !F && (F = !0, d.d.before(H, 49), i.registerSyncInner.before(R, 48), Object(u.a)("validateGdprEnforcement").before(T, 47)), h && Object(u.a)("makeBidRequests").before(G), j && Object(u.a)("enableAnalyticsCb").before(M)
+        }
+        c.b.getConfig("consentManagement", function (e) {
+            return U(e.consentManagement)
+        })
+    }
+}, [438]);
+pbjsChunk([218], {
+    499: function (e, r, t) {
+        e.exports = t(500)
+    },
+    500: function (e, r, t) {
         "use strict";
         Object.defineProperty(r, "__esModule", {
             value: !0
@@ -8231,7 +8707,7 @@ pbjsChunk([214], {
             B = t(3),
             i = t(10),
             l = t.n(i),
-            n = t(498),
+            n = t(501),
             s = t.n(n),
             a = t(1);
 
@@ -8466,12 +8942,12 @@ pbjsChunk([214], {
         };
         Object(a.registerBidder)(c)
     }
-}, [496]);
-pbjsChunk([196], {
-    547: function (e, r, t) {
-        e.exports = t(548)
+}, [499]);
+pbjsChunk([199], {
+    552: function (e, r, t) {
+        e.exports = t(553)
     },
-    548: function (e, r, t) {
+    553: function (e, r, t) {
         "use strict";
         Object.defineProperty(r, "__esModule", {
             value: !0
@@ -8771,12 +9247,12 @@ pbjsChunk([196], {
         var u = !1;
         Object(i.registerBidder)(a)
     }
-}, [547]);
-pbjsChunk([167], {
-    613: function (e, t, r) {
-        e.exports = r(614)
+}, [552]);
+pbjsChunk([170], {
+    618: function (e, t, r) {
+        e.exports = r(619)
     },
-    614: function (e, t, r) {
+    619: function (e, t, r) {
         "use strict";
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -9040,12 +9516,12 @@ pbjsChunk([167], {
         }
         Object(n.registerBidder)(o)
     }
-}, [613]);
-pbjsChunk([125], {
-    720: function (e, r, t) {
-        e.exports = t(721)
+}, [618]);
+pbjsChunk([128], {
+    725: function (e, r, t) {
+        e.exports = t(726)
     },
-    721: function (e, r, t) {
+    726: function (e, r, t) {
         "use strict";
         Object.defineProperty(r, "__esModule", {
             value: !0
@@ -9414,7 +9890,7 @@ pbjsChunk([125], {
                         alt_size_ids: n.slice(1).join(",") || void 0,
                         rp_floor: .01 < (i.floor = parseFloat(i.floor)) ? i.floor : .01,
                         rp_secure: "1",
-                        tk_flint: "".concat(_.int_type || "pbjs_lite", "_v4.15.0"),
+                        tk_flint: "".concat(_.int_type || "pbjs_lite", "_v4.17.0"),
                         "x_source.tid": e.transactionId,
                         "x_source.pchain": i.pchain,
                         p_screen_res: [window.screen.width, window.screen.height].join("x"),
@@ -9679,11 +10155,31 @@ pbjsChunk([125], {
         var z = !1;
         Object(i.registerBidder)(A)
     }
-}, [720]);
+}, [725]);
 pbjs.processQueue();
+
+//prebid bids
+
 
 var PREBID_TIMEOUT = 3000;
 var FAILSAFE_TIMEOUT = 3000;
+
+
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+pbjs.que.push(function() {
+   pbjs.setConfig({
+     consentManagement: {
+       gdpr: {
+         cmpApi: 'iab',
+         timeout: 8000,
+         defaultGdprScope: true
+       }
+     }
+   });
+});
+
 var adUnits = [{
     code: 'leaderboard_top',
     mediaTypes: {
@@ -9738,60 +10234,7 @@ var adUnits = [{
             placementId: "20620935"
         }
     }]
-
-}, {
-    code: 'leaderboard_top_A1',
-    mediaTypes: {
-        banner: {
-            sizes: [
-                [300, 250],
-                [300, 600]
-            ]
-        }
-    },
-    bids: [{
-        bidder: "openx",
-        params: {
-            unit: '543813197',
-            delDomain: 'ringieraxelspr-d.openx.net'
-        }
-    }, {
-        bidder: 'ix',
-        params: {
-            size: [300, 250],
-            siteId: "599796"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x600"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x250"
-        }
-    }, {
-        bidder: 'criteo',
-        params: {
-            networkId: '9517'
-        }
-    }, {
-        bidder: 'rubicon',
-        params: {
-            siteId: "355198",
-            zoneId: "1898442",
-            accountId: "19712"
-        }
-    }, {
-        bidder: 'appnexus',
-        params: {
-            placementId: "20620937"
-        }
-    }]
-
+    
 }, {
     code: 'sidebar_1',
     mediaTypes: {
@@ -9950,164 +10393,13 @@ var adUnits = [{
             placementId: "20620958"
         }
     }]
-}, {
-    code: 'sidebar_4',
-    mediaTypes: {
-        banner: {
-            sizes: [
-                [300, 250],
-                [300, 600]
-            ]
-        }
-    },
-    bids: [{
-        bidder: 'ix',
-        params: {
-            size: [300, 250],
-            siteId: "599800"
-        }
-    }, {
-        bidder: "openx",
-        params: {
-            unit: '543813214',
-            delDomain: 'ringieraxelspr-d.openx.net'
-        }
-    }, {
-        bidder: 'rubicon',
-        params: {
-            siteId: "355198",
-            zoneId: "1898464",
-            accountId: "19712"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x250"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x600"
-        }
-    }, {
-        bidder: 'criteo',
-        params: {
-            networkId: '9517'
-        }
-    }, {
-        bidder: 'appnexus',
-        params: {
-            placementId: "20620964"
-        }
-    }],
-
-}, {
-    code: 'sidebar_5',
-    mediaTypes: {
-        banner: {
-            sizes: [
-                [300, 250],
-                [300, 600]
-            ]
-        }
-    },
-    bids: [{
-        bidder: 'ix',
-        params: {
-            size: [300, 250],
-            siteId: "599801"
-        }
-    }, {
-        bidder: "openx",
-        params: {
-            unit: '543813361',
-            delDomain: 'ringieraxelspr-d.openx.net'
-        }
-    }, {
-        bidder: 'rubicon',
-        params: {
-            siteId: "355198",
-            zoneId: "1898466",
-            accountId: "19712"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x250"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x600"
-        }
-    }, {
-        bidder: 'criteo',
-        params: {
-            networkId: '9517'
-        }
-    }, {
-        bidder: 'appnexus',
-        params: {
-            placementId: "20620972"
-        }
-    }]
-}, {
-    code: 'sidebar_6',
-    mediaTypes: {
-        banner: {
-            sizes: [
-                [300, 250],
-                [300, 600]
-            ]
-        }
-    },
-    bids: [{
-        bidder: 'ix',
-        params: {
-            size: [300, 250],
-            siteId: "599802"
-        }
-    }, {
-        bidder: "openx",
-        params: {
-            unit: '543813421',
-            delDomain: 'ringieraxelspr-d.openx.net'
-        }
-    }, {
-        bidder: 'rubicon',
-        params: {
-            siteId: "355198",
-            zoneId: "1898468",
-            accountId: "19712"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x600"
-        }
-    }, {
-        bidder: 'luponmedia',
-        params: {
-            siteId: 1028,
-            keyId: "informer300x250"
-        }
-    }, {
-        bidder: 'criteo',
-        params: {
-            networkId: '9517'
-        }
-    }, {
-        bidder: 'appnexus',
-        params: {
-            placementId: "20620975"
-        }
-    }]
 }];
+
+
+
+
+
+
 
 const customConfigObject = {
     "buckets": [{
@@ -10133,18 +10425,12 @@ const customConfigObject = {
     }]
 };
 
-//var googletag = googletag || {};
-//googletag.cmd = googletag.cmd || [];
-//googletag.cmd.push(function() {
-//    googletag.pubads().disableInitialLoad();
-//});
-
 var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 
-pbjs.que.push(function () {
-    pbjs.addAdUnits(adUnits);
 
+pbjs.que.push(function () {
+pbjs.addAdUnits(adUnits);
     pbjs.setConfig({
         priceGranularity: customConfigObject,
         userSync: {
@@ -10156,11 +10442,9 @@ pbjs.que.push(function () {
             }
         },
     });
-
     pbjs.requestBids({
         bidsBackHandler: sendAdServerRequest,
     });
-    
     pbjs.enableAnalytics([{
         provider: 'adxpremium',
         options: {
@@ -10169,6 +10453,9 @@ pbjs.que.push(function () {
         }
     }]);
 });
+
+
+
 
 
 function sendAdServerRequest() {
